@@ -63,11 +63,12 @@ header  {
     padding-right: 1rem;
 }
 
-.Menu__Navegacion a:hover {
+.Menu__Navegacion ul li a:hover {
     color: #f86c62;
+    font-size: 2rem ;
 }
 
-.Menu__Navegacion ul li a:hover {
+.Menu__Navegacion a:hover {
     color: #f86c62;
     font-size: 2rem ;
 }

@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <link rel="stylesheet" href="css/style.css">
     <title>EZ PC Inicio</title>
 </head>
 <body>
     <section id="Grilla__Index">
         <header> <!--Navegacion en la Pagina-->
-            <nav class="Menu__Navegacion">
+            <nav class="Menu__Navegacion" >
                 <ul class="Navegacion__Lista">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/componentes.html">Componentes</a></li>
-                    <li><a href="pages/perifericos.html">Perifericos</a></li>
-                    <li><a href="pgages/armado_pc.html">Armado PC</a></li>
+                    <li class="animate__animated animate__fadeInDown"><a href="index.html">Inicio</a></li>
+                    <li id="Animacion1" class="animate__animated animate__fadeInDown"><a href="pages/componentes.html">Componentes</a></li>
+                    <li id="Animacion2" class="animate__animated animate__fadeInDown"><a href="pages/perifericos.html">Perifericos</a></li>
+                    <li id="Animacion3" class="animate__animated animate__fadeInDown"><a href="pgages/armado_pc.html">Armado PC</a></li>
                 </ul>
-                <li><a class="Contacto" href="Pages/Contacto.html">Contacto</a></li>
+                <li id="Animacion4" class="animate__animated animate__fadeInDown"><a class="Contacto" href="Pages/Contacto.html">Contacto</a></li>
             </nav>
         </header>
 
-        <section id="Logo" class="Logo">  <!--Logo-->
-            <img class="Logo__Img" src="img/ez.jpg" alt="Logo">
-            <h1>EZ PC</h1>
-            <p class="Logo__Descripcion">
-                Bienvenidos a mi pagina web <br>
-                En ella aprenderan todo lo necesario para que puedan armar ustedes mismos su propia PC <br>
-                Espero que esta guia les ayude en su magnifica travesia
-            </p>
+        <section class="Logo">  <!--Logo-->
+            <div id="Logo" class="animate__animated animate__fadeInDown">
+                <img class="Logo__Img" src="img/ez.jpg" alt="Logo">
+                <h1>EZ PC</h1>
+                <p class="Logo__Descripcion">
+                    Bienvenidos a mi pagina web <br>
+                    En ella aprenderan todo lo necesario para que puedan armar ustedes mismos su propia PC <br>
+                    Espero que esta guia les ayude en su magnifica travesia
+                </p>
+            </div>
         </section>
 
         <footer>

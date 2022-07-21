@@ -9,7 +9,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom, #382f46, #2e1818, #382f46);
+    background-image: linear-gradient(to bottom, #190f25, #2e0f0f, #190f25);
     color: #AAACC5;
 }
 
@@ -36,6 +36,18 @@ header  {
     display: inline-block;
     list-style: none;
 }
+#Animacion1 {
+    animation-delay: 0.2s;
+}
+#Animacion2 {
+    animation-delay: 0.4s;
+}
+#Animacion3 {
+    animation-delay: 0.6s;
+}
+#Animacion4 {
+    animation-delay: 0.8s;
+}
 
 .Menu__Navegacion a {
     color: black;
@@ -57,6 +69,7 @@ header  {
 
 .Menu__Navegacion ul li a:hover {
     color: #f86c62;
+    font-size: 2rem ;
 }
 
 /*!Index*/
@@ -76,14 +89,14 @@ header  {
 header {
     grid-area: header;
 }
-section#Logo {
+section.Logo {
     grid-area: Logo;       
 }
 footer {
     grid-area: footer;
 }
 
-.Logo {
+#Logo {
     margin-top: 3rem;
     width: 90vw;
     height: 100%;
@@ -101,6 +114,8 @@ footer {
     border-width: thick;
     border-style: solid;
     border-color: #a23931;
+
+    align-self: center;
 }
 
 .Logo h1 {

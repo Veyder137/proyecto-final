@@ -881,7 +881,7 @@ footer {
     a.Contacto {
         width: auto;
         position: absolute;
-        left: 90%;
+        right: 1%;
         top: 2.5rem;
     }
     a {

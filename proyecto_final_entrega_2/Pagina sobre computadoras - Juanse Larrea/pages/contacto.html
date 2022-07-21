@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="arriba">
+        <header id="arriba"> <!--Navegacion en la Pagina-->
+            <nav class="Menu__Navegacion">
+                <ul class="Navegacion__Lista">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="componentes.html">Componentes</a></li>
+                    <li><a href="perifericos.html">Perifericos</a></li>
+                    <li><a href="armado_pc.html">Armado PC</a></li>
+                </ul>
+                <li><a class="Contacto" href="contacto.html">Contacto</a></li>
+            </nav>
+        </header>
+
+    <section class="Contacto"> <!--Elemntos de pagina--> 
+        <div class="Borde__Contacto">
+            <h1>Quien soy yo?</h1>
+            <div class="Contacto__Introduccion">
+                <p>Me llamo Juanse Larrea, soy un estudiante de la Udelar y actualmente estoy haciendo un curso de desarrollo web en <a href="https://www.coderhouse.com.uy" target="_blank">CoderHouse.</a> Esta es mi primera pagina web y elegi hacerla sobre lo que mas me gusta y si es posible ayudar a todos lo que quieran entrar a este mundo y que cometan los menores errores posible
+                </p>
+            </div>
+        </div>
+
+        <h1>Hazme una pregunta!</h1>
+        <div class="Formulario">
+            <Form>
+                <fieldset>
+                    <legend>Ingresa tus datos personales</legend>
+                    <div class="Formulario__Datos">
+                        <div class="Formulario__Datos--Texto"> <!--Texto-->
+                            <div>
+                                <label for="Nombre">Nombre y Apellido</label>
+                                <input type="text" id="Nombre" placeholder="Ingresa tu Nombre y Apellido">
+                            </div>
+                    
+                            <div>
+                                <label for="Mail">E-Mail</label>
+                                <input type="email" id="Mail" placeholder="Ingresa tu Mail">
+                            </div>
+                    
+                            <div>
+                                <label for="Telefono">Telefono</label>
+                                <input type="tel" id="Telefono" placeholder="Ingresa tu Telefono">
+                            </div>
+
+                            <div>
+                                <p>Dime lo que quieras</p>
+                                <textarea class="Formulario__Datos--Texto--Textarea" name="textoLibre" id="" cols="30" rows="10"></textarea>
+                            </div>    
+                        </div>
+                    </div>   
+
+                    <div class="Formulario__Datos--Botones"> <!--Botones-->
+                        <!--Envia Informacion-->
+                        <input type="submit" value="Enviar Formulario">
+            
+                        <!--Limpia Informacion-->
+                        <input type="reset" value="Limpiar Formulario"> 
+                    </div>
+
+                </fieldset>
+            </Form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="Footer__Index">
+            <a href="https://www.instagram.com/_veyder137_/" target="_blank">
+                <img class="Footer__Img--Insta" src="../img/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

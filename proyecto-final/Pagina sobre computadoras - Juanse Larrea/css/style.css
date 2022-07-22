@@ -9,12 +9,12 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom, #190f25, #2e0f0f, #190f25);
+    background-image: linear-gradient(to bottom, #190f25, #1d0b0f, #190f25);
     color: #AAACC5;
 }
 
 header  {
-    background-color: #765d98;
+    background-color: #5b3f81;
     height: 5rem;
     width: 100%;
     overflow: visible;
@@ -49,14 +49,14 @@ header  {
     animation-delay: 0.8s;
 }
 
-.Menu__Navegacion a {
+.Menu__Navegacion ul li a {
     color: black;
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.Menu__Navegacion ul li a {
+.Menu__Navegacion a {
     color: black;
     text-decoration: none;
     padding-left: 1rem;
@@ -807,7 +807,7 @@ footer {
 
 #Footer__Noindex {
     display: flex;
-    background-color: #765d98;
+    background-color: #5b3f81;
     height: 5rem;
     width: 100%;
     justify-content: space-between;
@@ -818,7 +818,7 @@ footer {
     position:absolute;
     bottom: 0px;
     display: flex;
-    background-color: #765d98;
+    background-color: #5b3f81;
     height: 50px;
     width: 100%;
     justify-content: space-between;

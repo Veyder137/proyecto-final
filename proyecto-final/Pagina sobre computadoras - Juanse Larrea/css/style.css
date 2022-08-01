@@ -90,14 +90,16 @@ header {
     grid-area: header;
 }
 section.Logo {
-    grid-area: Logo;       
+    grid-area: Logo;     
+    display: grid;
+    place-content: center;
+    height: 100%;      
 }
 footer {
     grid-area: footer;
 }
 
 #Logo {
-    margin-top: 3rem;
     width: 90vw;
     height: 100%;
 

@@ -65,6 +65,7 @@ header  {
 
 .Menu__Navegacion a:hover {
     color: #f86c62;
+    font-size: 2rem ;
 }
 
 .Menu__Navegacion ul li a:hover {
@@ -733,6 +734,11 @@ footer {
     border-radius: 1rem;
     padding: 2rem;
     margin-bottom: 1%;
+}
+
+.Borde__ArmadoPC a {
+    text-decoration: none;
+    color: #754185;
 }
 
 /*!Contacto*/

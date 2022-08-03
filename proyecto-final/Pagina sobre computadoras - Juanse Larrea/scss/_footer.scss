@@ -1,0 +1,40 @@
+footer {
+    height: 50px;
+}
+
+#Footer__Noindex {
+    display: flex;
+    background-color: $header_footer-color;
+    height: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+#Footer__Index {
+    position:absolute;
+    bottom: 0px;
+    display: flex;
+    background-color: $header_footer-color;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+.Footer__Img--Insta {
+    margin-top: 0.5rem ;
+    margin-left: 1rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.Footer__Img--Arriba {
+    position: fixed;
+    bottom: 0.5%;
+    right: 0;
+    margin-top: 0.5rem ;
+    margin-right: 1rem;
+    height: 4rem;
+    width: 4rem;
+}

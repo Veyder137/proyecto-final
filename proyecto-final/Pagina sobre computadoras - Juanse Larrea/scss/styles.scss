@@ -1,4 +1,14 @@
-$borde: thick solid #a23931;
+$background-color: linear-gradient(to bottom, #190f25, #1d0b0f, #190f25);
+$header_footer-color: #5b3f81;
+$color-logo: #f86c62;
+$text: 2rem;
+$subtitle_Title-text: 5rem;
+$border: thick solid #a23931;
+$link-color: beige;
+
+@import "./header";
+@import "./footer";
+@import "./media";
 
 * {
     margin: 0;
@@ -11,78 +21,9 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom, #190f25, #1d0b0f, #190f25);
+    background-image: $background-color;
     color: #AAACC5;
 }
-
-header  {
-    background-color: #5b3f81;
-    height: 5rem;
-    width: 100%;
-    overflow: visible;
-}
-
-.Menu__Navegacion {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    overflow: visible;
-    height: 5rem;
-    width: 99%;
-    font-size: 2rem;
-    font-weight: 500;
-    justify-content: space-between;
-
-    li  {
-        list-style: none;
-
-        a {
-            color: black;
-            text-decoration: none;
-            padding-left: 1rem;
-            padding-right: 1rem;
-
-            &:hover {
-                color: #f86c62;
-                font-size: 2.2rem ;
-            }
-        }
-    }
-
-    #Animacion4 {
-        animation-delay: 0.8s;
-    }
-
-    .Navegacion__Lista {
-        li {
-            display: inline-block;
-            list-style: none;
-        }
-        #Animacion1 {
-            animation-delay: 0.2s;
-        }
-        #Animacion2 {
-            animation-delay: 0.4s;
-        }
-        #Animacion3 {
-            animation-delay: 0.6s;
-        }
-    
-        a{
-            color: black;
-            text-decoration: none;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        
-            &:hover {
-                color: #f86c62;
-                font-size: 2.2rem ;
-            }
-        }
-    }   
-}
-
-
 
 /*!Index*/
 #Grilla__Index {
@@ -123,7 +64,8 @@ footer {
     img {
         width: calc(18vw + 8vh);
 
-        border: $borde;
+        border: $border;
+        border-color: $color-logo;
         border-radius: 20%;
     
         align-self: center;
@@ -131,7 +73,7 @@ footer {
 
     h1 {
         font-size:calc(5vw + 4vh);
-        color: #f86c62;
+        color: $color-logo;
     
         text-align: center;
         justify-self: center;
@@ -141,12 +83,13 @@ footer {
         width: 80%;
         text-align: center;
 
-        border: $borde;
+        border: $border;
+        border-color: $color-logo;
         border-radius: 20px;
     
         font-size: 200%;
         padding: 0.5rem;
-        color: #f86c62;
+        color: $color-logo;
     }
 }
 
@@ -179,8 +122,8 @@ footer {
     margin: 1%;
 
     .Componentes__Titulo {
-        font-size: 5rem;
-        font-weight: bold;
+        font-size: $subtitle_Title-text;
+        font-weight: bolder;
     }
 
     .Componentes__Explicacion--Parrafo {
@@ -189,23 +132,27 @@ footer {
 
     .Borde__MPGRFA {
         display: block;
-        border: $borde;
+        border: $border;
         border-radius: 1rem;
         padding: 1%;
         margin-bottom: 1%;
     }
 
     p {
-        font-size: 2rem;
+        font-size: $text;
     }
 
     .Componentes__Subtitulos {
-        font-size: 5rem;
-        font-weight: bold;
+        font-size: $subtitle_Title-text;
     }
 
     .Componentes__Imagenes {
         width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #754185;
     }
 
     .Componentes__Imagenes--Almacenamiento{
@@ -578,7 +525,12 @@ footer {
     margin: 1%;
 
     .Perifericos__Titulo {
-        font-size: 5rem;
+        font-size: $subtitle_Title-text;
+        font-weight: bolder;
+    }    
+    
+    .Perifericos__Subitulo {
+        font-size: $subtitle_Title-text;
     }
 
     .Perifericos__Explicacion--Parrafo {
@@ -612,24 +564,23 @@ footer {
     .Borde__MTAMM {
         display: block;
 
-        border: $borde;
+        border: $border;
         border-radius: 1rem;
 
         padding: 2rem;
         margin-bottom: 1%;
     }
+    
+    p {
+        font-size: $text;
+    }
 
     .Perifericos__Subtitulos /*Subtitulos*/ {
         font-size: 5rem;
-        font-weight: bold;
     }
 
     .Perifericos__Imagenes{
         width: 100%;    
-    }
-    
-    p {
-        font-size: 2rem;
     }
 }
 
@@ -662,15 +613,16 @@ footer {
     margin: 1%;
 
     p {
-        font-size: 2rem;
+        font-size: $text;
     }
 
-    h1 {
-        font-size: 5rem;
+    .ArmadoPC__Titulo {
+        font-size: $subtitle_Title-text;
+        font-weight: bolder;
     }
 
     .Borde__ArmadoPC {
-        border: $borde;
+        border: $border;
         border-radius: 1rem;
         padding: 2rem;
         margin-bottom: 1%;
@@ -681,10 +633,8 @@ footer {
         }
     }
 
-    .ArmadoPC__Subtitulo {
-        margin-left: 1rem;
-        font-size: 5rem;
-        font-weight: bold;
+    .ArmadoPC__Subtitulo {  
+        font-size: $subtitle_Title-text;
     }
 }
 
@@ -694,11 +644,11 @@ footer {
     margin: 1%;
 
     p, legend, label {
-        font-size: 2rem;
+        font-size: $text;
     }
 
     .Borde__Contacto {
-        border: $borde;
+        border: $border;
         border-radius: 1rem;
         padding: 2rem;
 
@@ -708,7 +658,7 @@ footer {
         }
     }
 
-    h1 {
+    .Contacto__Subtitulo {
         font-size: 5rem;
     }
 
@@ -747,247 +697,3 @@ footer {
         }
     }
 }
-
-footer {
-    height: 50px;
-}
-
-#Footer__Noindex {
-    display: flex;
-    background-color: #5b3f81;
-    height: 5rem;
-    width: 100%;
-    justify-content: space-between;
-    overflow: visible;
-}
-
-#Footer__Index {
-    position:absolute;
-    bottom: 0px;
-    display: flex;
-    background-color: #5b3f81;
-    height: 50px;
-    width: 100%;
-    justify-content: space-between;
-    overflow: visible;
-}
-
-.Footer__Img--Insta {
-    margin-top: 0.5rem ;
-    margin-left: 1rem;
-    height: 4rem;
-    width: 4rem;
-}
-
-.Footer__Img--Arriba {
-    position: fixed;
-    bottom: 0.5%;
-    right: 0;
-    margin-top: 0.5rem ;
-    margin-right: 1rem;
-    height: 4rem;
-    width: 4rem;
-}
-
-@media (max-width: 800px){
-    .Footer__Img--Arriba {
-        margin: 0;
-    }
-    #Footer__Noindex {
-        width: 100vw;
-    }
-    /*!Index*/
-    header {
-        height: 8rem;
-        align-items: center;
-    }
-
-    nav.Menu__Navegacion{
-        height: auto;
-        width: auto;
-    }
-
-    li{
-        align-self: center;
-    }
-    ul.Navegacion__Lista {
-        position:absolute;
-        top: 0px;
-
-        display: grid;
-        grid-area: 
-        "Inicio Componentes "
-        "Perifericos ArmadoPC ";
-
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
-
-        height: 8rem;
-        width: 60%;
-    }
-    a.Index {
-        grid-area: Inicio;
-    }
-    a.Componentes {
-        grid-area: Componentes;
-    }
-    a.Perifericos {
-        grid-area: Perifericos;
-    }
-    a.ArmadoPC {
-        grid-area: ArmadoPC;
-    }
-    a.Contacto {
-        width: auto;
-        position: absolute;
-        right: 1%;
-        top: 2.5rem;
-    }
-    a {
-        font-size: 1.8rem ;
-    }
-
-    /*!Componentes*/
-    #Grilla__Componentes {
-        display: grid;
-        grid-template-areas:
-        "header header header "
-        ". Componentes ."
-        "footer footer footer";
-        grid-template-rows: auto 10fr auto; 
-        grid-template-columns: 1rem 100% 1rem;
-        width: 94vw;
-        margin: 0;
-    }
-    header {
-        grid-area: header;
-    }
-    section.Componentes {
-        grid-area: Componentes;       
-    }
-    footer {
-        grid-area: footer;
-    }
-
-    .Componentes__Titulo {
-        font-size: 3rem;
-    }
-    label.Componentes__Subtitulos {
-        font-size: 3rem;
-    }
-    p.Componentes__Explicacion--Parrafo {
-        font-size: 1.5rem;
-    }
-    .Componentes img {
-        width: 0;
-    }
-    div.Borde__MPGRFA p {
-        font-size: 1.5rem;
-    }
-    label.Componentes__MPGRF--Identificacion {
-        font-size: 2.5rem;
-    }
-    .Componentes__MPGRF--Identificacion--Objeto {
-        font-size: 2rem !important;
-        font-weight: bold !important;
-    }
-    p#Descripcion {
-        margin-bottom: 10%;
-    }
-    table#Tabla__Intel.Componentes__MPGRF--Lista--Procesador, table#Tabla__AMD--Procesador.Componentes__MPGRF--Lista--Procesador, table#Tabla__NVDIA.Componentes__MPGRF--Lista--Grafica, table#Tabla__AMD--Grafica.Componentes__MPGRF--Lista--Grafica,
-    table#Tabla__Ram.Componentes__MPGRF--Lista--Ram, 
-    table#Tabla__Fuente.Componentes__MPGRF--Lista--Fuente, table#Tabla__Almacenamiento.Componentes__MPGRF--Lista--Almacenamiento {
-        margin: 0;
-    }
-    li {
-        list-style: none;
-        font-size: 1rem;
-    }
-    th {
-        font-size: 1.2rem;
-    }
-
-    .Componentes__MPGRF--Lista--Procesador,
-    .Componentes__MPGRF--Lista--Grafica,
-    .Componentes__MPGRF--Lista--Ram,
-    .Componentes__MPGRF--Lista--Fuente,
-    .Componentes__MPGRF--Lista--Almacenamiento {
-        width:100%;
-        margin-left: 3rem;
-    }
-
-    .Componentes__MPGRF--Lista--Procesador,
-    .Componentes__MPGRF--Lista--Grafica,
-    .Componentes__MPGRF--Lista--Ram,
-    .Componentes__MPGRF--Lista--Fuente,
-    .Componentes__MPGRF--Lista--Almacenamiento th, td{
-        text-align: left;
-        vertical-align: top;
-    }
-
-    #Grilla__Motherboard, #Grilla__Procesador, #Grilla__Grafica, #Grilla__Ram, #Grilla__Fuente, #Grilla__Almacenamiento {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    #Tabla__Intel--Procesador {
-        margin: 1% 0;
-        width: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    #Tabla__AMD--Procesador {
-        margin: 1% 0;
-        width: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /*!Perifericos*/
-    #Grilla__Perifericos--Objetos {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .Perifericos__Titulo {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-    label.Perifericos__Subtitulos {
-        font-size: 3rem;
-    }
-    .Perifericos p {
-        font-size: 1.5rem;
-    }
-    .Perifericos img {
-        width: 0;
-    }
-
-    /*!Armado PC*/
-    .ArmadoPC h1 {
-        font-size: 3rem;
-    }
-    .ArmadoPC p {
-        font-size: 1.5rem;
-    }
-
-
-    /*!Contacto*/
-    .Contacto h1 {
-        font-size: 3rem;
-    }
-    .Contacto p {
-        font-size: 1.5rem;
-    }
-    .Formulario fieldset {
-        width: 100%;
-        height: 70%;
-    }
-    .Contacto legend {
-        font-size: 1.5rem;
-    }
-    .Contacto label {
-        font-size: 1.5rem;
-    }
-    }

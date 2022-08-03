@@ -40,12 +40,12 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.Menu__Navegacion li a:hover {
+  color: #f86c62;
+  font-size: 2.2rem;
+}
 .Menu__Navegacion #Animacion4 {
   animation-delay: 0.8s;
-}
-.Menu__Navegacion a:hover {
-  color: #f86c62;
-  font-size: 2rem;
 }
 .Menu__Navegacion .Navegacion__Lista li {
   display: inline-block;
@@ -68,7 +68,7 @@ header {
 }
 .Menu__Navegacion .Navegacion__Lista a:hover {
   color: #f86c62;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 /*!Index*/

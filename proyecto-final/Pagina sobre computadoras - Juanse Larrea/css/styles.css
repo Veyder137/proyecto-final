@@ -1,14 +1,3 @@
-/*
-.Borde__MTAMM {
-    display: block;
-    border-width:thick;
-    border-style: solid;
-    border-color: #a23931;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 1%;
-}
-*/
 * {
   margin: 0;
   padding: 10;
@@ -118,10 +107,8 @@ footer {
 }
 #Logo img {
   width: calc(18vw + 8vh);
+  border: thick solid #a23931;
   border-radius: 20%;
-  border-width: thick;
-  border-style: solid;
-  border-color: #a23931;
   align-self: center;
 }
 #Logo h1 {
@@ -133,10 +120,8 @@ footer {
 #Logo .Logo__Descripcion {
   width: 80%;
   text-align: center;
+  border: thick solid #a23931;
   border-radius: 20px;
-  border-width: thick;
-  border-style: solid;
-  border-color: #ac3931;
   font-size: 200%;
   padding: 0.5rem;
   color: #f86c62;
@@ -151,16 +136,13 @@ footer {
   width: 100%;
   margin: 0;
 }
-
-header {
+#Grilla__Componentes header {
   grid-area: header;
 }
-
-section.Componentes {
+#Grilla__Componentes section.Componentes {
   grid-area: Componentes;
 }
-
-footer {
+#Grilla__Componentes footer {
   grid-area: footer;
 }
 
@@ -228,7 +210,7 @@ footer {
   padding: 0;
 }
 
-/*MMPGRFF (Mother, Procesador, Grafica, Ram y Fuente)*/
+/*MPGRF (Mother, Procesador, Grafica, Ram y Fuente)*/
 /**Motherboard*/
 #Grilla__Motherboard {
   display: grid;
@@ -517,9 +499,7 @@ footer {
 }
 .Perifericos .Borde__MTAMM {
   display: block;
-  border-width: thick;
-  border-style: solid;
-  border-color: #a23931;
+  border: thick solid #a23931;
   border-radius: 1rem;
   padding: 2rem;
   margin-bottom: 1%;

@@ -1,15 +1,4 @@
 $borde: thick solid #a23931;
-/*
-.Borde__MTAMM {
-    display: block;
-    border-width:thick;
-    border-style: solid;
-    border-color: #a23931;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 1%;
-}
-*/
 
 * {
     margin: 0;
@@ -134,10 +123,8 @@ footer {
     img {
         width: calc(18vw + 8vh);
 
+        border: $borde;
         border-radius: 20%;
-        border-width: thick;
-        border-style: solid;
-        border-color: #a23931;
     
         align-self: center;
     }
@@ -153,10 +140,9 @@ footer {
     .Logo__Descripcion {
         width: 80%;
         text-align: center;
+
+        border: $borde;
         border-radius: 20px;
-        border-width: thick;
-        border-style: solid;
-        border-color: #ac3931;
     
         font-size: 200%;
         padding: 0.5rem;
@@ -176,15 +162,16 @@ footer {
 
     width: 100%;
     margin: 0;
-}
-header {
-    grid-area: header;
-}
-section.Componentes {
-    grid-area: Componentes;       
-}
-footer {
-    grid-area: footer;
+
+    header {
+        grid-area: header;
+    }
+    section.Componentes {
+        grid-area: Componentes;       
+    }
+    footer {
+        grid-area: footer;
+    }
 }
 
 .Componentes {
@@ -267,9 +254,7 @@ footer {
     }
 }
 
-/*MMPGRFF (Mother, Procesador, Grafica, Ram y Fuente)*/
-
-
+/*MPGRF (Mother, Procesador, Grafica, Ram y Fuente)*/
 /**Motherboard*/
 #Grilla__Motherboard {
     display: grid;
@@ -626,10 +611,10 @@ footer {
 
     .Borde__MTAMM {
         display: block;
-        border-width:thick;
-        border-style: solid;
-        border-color: #a23931;
+
+        border: $borde;
         border-radius: 1rem;
+
         padding: 2rem;
         margin-bottom: 1%;
     }

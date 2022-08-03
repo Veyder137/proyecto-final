@@ -1,0 +1,853 @@
+/*
+.Borde__MTAMM {
+    display: block;
+    border-width:thick;
+    border-style: solid;
+    border-color: #a23931;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 1%;
+}
+*/
+* {
+  margin: 0;
+  padding: 10;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to bottom, #190f25, #1d0b0f, #190f25);
+  color: #AAACC5;
+}
+
+header {
+  background-color: #5b3f81;
+  height: 5rem;
+  width: 100%;
+  overflow: visible;
+}
+
+.Menu__Navegacion {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  height: 5rem;
+  width: 99%;
+  font-size: 2rem;
+  font-weight: 500;
+  justify-content: space-between;
+}
+.Menu__Navegacion li {
+  list-style: none;
+}
+.Menu__Navegacion li a {
+  color: black;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.Menu__Navegacion #Animacion4 {
+  animation-delay: 0.8s;
+}
+.Menu__Navegacion a:hover {
+  color: #f86c62;
+  font-size: 2rem;
+}
+.Menu__Navegacion .Navegacion__Lista li {
+  display: inline-block;
+  list-style: none;
+}
+.Menu__Navegacion .Navegacion__Lista #Animacion1 {
+  animation-delay: 0.2s;
+}
+.Menu__Navegacion .Navegacion__Lista #Animacion2 {
+  animation-delay: 0.4s;
+}
+.Menu__Navegacion .Navegacion__Lista #Animacion3 {
+  animation-delay: 0.6s;
+}
+.Menu__Navegacion .Navegacion__Lista a {
+  color: black;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.Menu__Navegacion .Navegacion__Lista a:hover {
+  color: #f86c62;
+  font-size: 2rem;
+}
+
+/*!Index*/
+#Grilla__Index {
+  display: grid;
+  grid-template-areas: "header header header " ". Logo ." "footer footer footer";
+  grid-template-rows: auto 10fr auto;
+  grid-template-columns: 1fr 20fr 1fr;
+  height: 100vh; /*Viewport height*/ /*Viewport = Pantalla*/
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  grid-area: header;
+}
+
+section.Logo {
+  grid-area: Logo;
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#Logo {
+  width: 90vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#Logo img {
+  width: calc(18vw + 8vh);
+  border-radius: 20%;
+  border-width: thick;
+  border-style: solid;
+  border-color: #a23931;
+  align-self: center;
+}
+#Logo h1 {
+  font-size: calc(5vw + 4vh);
+  color: #f86c62;
+  text-align: center;
+  justify-self: center;
+}
+#Logo .Logo__Descripcion {
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+  border-width: thick;
+  border-style: solid;
+  border-color: #ac3931;
+  font-size: 200%;
+  padding: 0.5rem;
+  color: #f86c62;
+}
+
+/*!Componentes*/
+#Grilla__Componentes {
+  display: grid;
+  grid-template-areas: "header header header " ". Componentes ." "footer footer footer";
+  grid-template-rows: auto 10fr auto;
+  grid-template-columns: 1fr 100fr 2fr;
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  grid-area: header;
+}
+
+section.Componentes {
+  grid-area: Componentes;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.Componentes {
+  width: auto;
+  margin: 1%;
+}
+.Componentes .Componentes__Titulo {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.Componentes .Componentes__Explicacion--Parrafo {
+  font-size: 2rem;
+}
+.Componentes .Borde__MPGRFA {
+  display: block;
+  border: thick solid #a23931;
+  border-radius: 1rem;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+.Componentes p {
+  font-size: 2rem;
+}
+.Componentes .Componentes__Subtitulos {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.Componentes .Componentes__Imagenes {
+  width: 100%;
+}
+.Componentes .Componentes__Imagenes--Almacenamiento {
+  width: 90%;
+}
+.Componentes .Componentes__MPGRF {
+  margin-top: 2rem;
+  display: flex;
+  height: 15%;
+}
+.Componentes .Componentes__MPGRF p {
+  margin-left: 2rem;
+  width: 100%;
+}
+.Componentes .Componentes__MPGRF--Identificacion {
+  font-size: 3rem;
+}
+.Componentes .Componentes__MPGRF--Identificacion--Objeto {
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+.Componentes .Componentes__MPGRF--Identificacion--Parrafo {
+  margin-left: 3rem;
+}
+.Componentes .Componentes__MPGRF--Identificacion--Parrafo span {
+  text-decoration: underline;
+}
+.Componentes li {
+  list-style: none;
+  font-size: 1.7rem;
+}
+.Componentes th {
+  font-size: 2rem;
+}
+.Componentes ul {
+  padding: 0;
+}
+
+/*MMPGRFF (Mother, Procesador, Grafica, Ram y Fuente)*/
+/**Motherboard*/
+#Grilla__Motherboard {
+  display: grid;
+  grid-template-areas: "Titulo Titulo" "Img Descripcion" "Identificacion Identificacion";
+  grid-template-columns: 25rem auto;
+  grid-template-rows: 5rem 25rem fit-content;
+  height: fit-content;
+  width: 100%;
+}
+#Grilla__Motherboard .Componentes__Subtitulos {
+  grid-area: Titulo;
+}
+#Grilla__Motherboard div img {
+  grid-area: Img;
+}
+#Grilla__Motherboard #Descripcion {
+  grid-area: Descripcion;
+}
+#Grilla__Motherboard #Identificacion {
+  grid-area: Identificacion;
+}
+
+/**Procesador*/
+#Grilla__Procesador {
+  display: grid;
+  grid-template-areas: "Titulo Titulo" "Img Descripcion" "Identificacion__Intel Identificacion__Intel" "Tabla__Intel Tabla__Intel" "Identificacion__AMD Identificacion__AMD" "Tabla__AMD Tabla__AMD";
+  grid-template-columns: 25rem auto;
+  grid-template-rows: 6rem 25rem fit-content auto auto auto;
+  height: fit-content;
+  width: 100%;
+}
+#Grilla__Procesador .Componentes__Subtitulos {
+  grid-area: Titulo;
+}
+#Grilla__Procesador div img {
+  grid-area: Img;
+}
+#Grilla__Procesador #Descripcion {
+  grid-area: Descripcion;
+}
+#Grilla__Procesador #Identificacion__Intel {
+  grid-area: Identificacion__Intel;
+}
+#Grilla__Procesador #Tabla__Intel--Procesador {
+  grid-area: Tabla__Intel;
+  margin: 1% 3rem;
+  display: flex;
+  width: 80rem;
+}
+#Grilla__Procesador #Identificacion__AMD {
+  grid-area: Identificacion__AMD;
+}
+#Grilla__Procesador #Tabla__AMD--Procesador {
+  grid-area: Tabla__AMD;
+  margin: 1% 3rem;
+  display: flex;
+  width: 80rem;
+}
+
+.Componentes__MPGRF--Lista--Procesador--Intel {
+  width: auto;
+  margin: 0;
+}
+.Componentes__MPGRF--Lista--Procesador--Intel th {
+  height: 1%;
+}
+.Componentes__MPGRF--Lista--Procesador--Intel th, .Componentes__MPGRF--Lista--Procesador--Intel td {
+  width: 20rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.Componentes__MPGRF--Lista--Procesador--AMD {
+  width: auto;
+  margin: 0;
+}
+.Componentes__MPGRF--Lista--Procesador--AMD th {
+  height: 1%;
+}
+.Componentes__MPGRF--Lista--Procesador--AMD th, .Componentes__MPGRF--Lista--Procesador--AMD td {
+  text-align: left;
+  vertical-align: top;
+  width: 20rem;
+}
+
+/**Grafica*/
+#Grilla__Grafica {
+  display: grid;
+  grid-template-areas: "Titulo Titulo" "Img Descripcion" "Identificacion__NVDIA Identificacion__NVDIA" "Tabla__NVDIA Tabla__NVDIA" "Identificacion__AMD Identificacion__AMD" "Tabla__AMD Tabla__AMD";
+  grid-template-columns: 25rem auto;
+  grid-template-rows: 6rem 25rem fit-content auto auto auto;
+  height: fit-content;
+  width: 100%;
+}
+#Grilla__Grafica .Componentes__Subtitulos {
+  grid-area: Titulo;
+}
+#Grilla__Grafica div img {
+  grid-area: Img;
+}
+#Grilla__Grafica #Descripcion {
+  grid-area: Descripcion;
+}
+#Grilla__Grafica #Identificacion__NVDIA {
+  grid-area: Identificacion__NVDIA;
+}
+#Grilla__Grafica #Tabla__NVDIA {
+  grid-area: Tabla__NVDIA;
+  margin: 1% 3rem;
+}
+#Grilla__Grafica #Identificacion__AMD--Grafica {
+  grid-area: Identificacion__AMD;
+}
+#Grilla__Grafica #Tabla__AMD--Grafica {
+  grid-area: Tabla__AMD;
+  margin: 1% 3rem;
+}
+
+.Componentes__MPGRF--Lista--Grafica {
+  width: 70rem;
+  margin-left: 3rem;
+}
+.Componentes__MPGRF--Lista--Grafica th {
+  height: 1%;
+}
+.Componentes__MPGRF--Lista--Grafica th, .Componentes__MPGRF--Lista--Grafica td {
+  text-align: left;
+  vertical-align: top;
+}
+
+/**Ram*/
+#Grilla__Ram {
+  display: grid;
+  grid-template-areas: "Titulo Titulo" "Img Descripcion" "Identificacion Identificacion" "Tabla Tabla";
+  grid-template-columns: 25rem auto;
+  grid-template-rows: 6rem 25rem fit-content auto;
+  height: fit-content;
+  width: 100%;
+}
+#Grilla__Ram .Componentes__Subtitulos {
+  grid-area: Titulo;
+}
+#Grilla__Ram div img {
+  grid-area: Img;
+}
+#Grilla__Ram #Descripcion {
+  grid-area: Descripcion;
+}
+#Grilla__Ram #Identificacion__Ram {
+  grid-area: Identificacion;
+}
+#Grilla__Ram #Tabla__Ram {
+  grid-area: Tabla;
+  margin: 1% 3rem;
+}
+
+.Componentes__MPGRF--Lista--Ram {
+  width: 25rem;
+  margin-left: 3rem;
+}
+.Componentes__MPGRF--Lista--Ram th, .Componentes__MPGRF--Lista--Ram td {
+  width: 10rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+/**Fuente*/
+#Grilla__Fuente {
+  display: grid;
+  grid-template-areas: "Titulo Titulo" "Img Descripcion" "Identificacion Identificacion" "Tabla Tabla";
+  grid-template-columns: 25rem auto;
+  grid-template-rows: 6rem 25rem fit-content auto;
+  height: fit-content;
+  width: 100%;
+}
+#Grilla__Fuente .Componentes__Subtitulos {
+  grid-area: Titulo;
+}
+#Grilla__Fuente div img {
+  grid-area: Img;
+}
+#Grilla__Fuente #Descripcion {
+  grid-area: Descripcion;
+}
+#Grilla__Fuente #Identificacion__Fuente {
+  grid-area: Identificacion;
+}
+#Grilla__Fuente #Tabla__Fuente {
+  grid-area: Tabla;
+  margin: 1% 3rem;
+}
+
+.Componentes__MPGRF--Lista--Fuente {
+  width: fit-content;
+  margin-left: 3rem;
+}
+.Componentes__MPGRF--Lista--Fuente th, .Componentes__MPGRF--Lista--Fuente td {
+  text-align: left;
+  vertical-align: top;
+}
+
+/**Almacenamiento*/
+#Grilla__Almacenamiento {
+  display: grid;
+  grid-template-areas: "Titulo Titulo" "Img Descripcion" "Identificacion__HDD Identificacion__HDD" "Identificacion__SSD Identificacion__SSD" "Tabla Tabla";
+  grid-template-columns: 25rem auto;
+  grid-template-rows: 6rem 25rem fit-content auto auto auto;
+  height: fit-content;
+  width: 100%;
+}
+#Grilla__Almacenamiento .Componentes__Subtitulos {
+  grid-area: Titulo;
+}
+#Grilla__Almacenamiento div img {
+  grid-area: Img;
+}
+#Grilla__Almacenamiento #Descripcion {
+  grid-area: Descripcion;
+}
+#Grilla__Almacenamiento #Identificacion__HDD {
+  grid-area: Identificacion__HDD;
+}
+#Grilla__Almacenamiento #Identificacion__SSD {
+  grid-area: Identificacion__SSD;
+}
+#Grilla__Almacenamiento #Tabla__Almacenamiento {
+  grid-area: Tabla;
+  margin: 1% 3rem;
+}
+
+.Componentes__MPGRF--Lista--Almacenamiento {
+  width: 70rem;
+  margin-left: 3rem;
+}
+.Componentes__MPGRF--Lista--Almacenamiento th, .Componentes__MPGRF--Lista--Almacenamiento td {
+  text-align: left;
+  vertical-align: top;
+}
+
+/*!Perifericos*/
+#Grilla__Perifericos {
+  display: grid;
+  grid-template-areas: "header header header " ". Perifericos ." "footer footer footer";
+  grid-template-rows: auto 10fr auto;
+  grid-template-columns: 1fr 100fr 2fr;
+  width: 100%;
+  margin: 0;
+}
+#Grilla__Perifericos header {
+  grid-area: header;
+}
+#Grilla__Perifericos section.Perifericos {
+  grid-area: Perifericos;
+}
+#Grilla__Perifericos footer {
+  grid-area: footer;
+}
+
+.Perifericos {
+  width: auto;
+  margin: 1%;
+}
+.Perifericos .Perifericos__Titulo {
+  font-size: 5rem;
+}
+.Perifericos .Perifericos__Explicacion--Parrafo {
+  font-size: 2rem;
+}
+.Perifericos #Grilla__Perifericos--Objetos {
+  display: grid;
+  grid-template-areas: "Titulo Titulo" "Img Descripcion";
+  grid-template-columns: 25rem auto;
+  grid-template-rows: 6rem 25rem;
+  height: auto; /*Viewport height*/ /*Viewport = Pantalla*/
+  width: 100%;
+  margin: 0;
+}
+.Perifericos #Grilla__Perifericos--Objetos .Perifericos__Subtitulos {
+  grid-area: Titulo;
+}
+.Perifericos #Grilla__Perifericos--Objetos .Perifericos__Imagenes {
+  grid-area: Img;
+}
+.Perifericos #Grilla__Perifericos--Objetos #Descripcion {
+  grid-area: Descripcion;
+}
+.Perifericos .Borde__MTAMM {
+  display: block;
+  border-width: thick;
+  border-style: solid;
+  border-color: #a23931;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 1%;
+}
+.Perifericos .Perifericos__Subtitulos {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.Perifericos .Perifericos__Imagenes {
+  width: 100%;
+}
+.Perifericos p {
+  font-size: 2rem;
+}
+
+/*!Armado PC*/
+#Grilla__ArmadoPC {
+  display: grid;
+  grid-template-areas: "header header header " ". Componentes ." "footer footer footer";
+  grid-template-rows: auto 10fr auto;
+  grid-template-columns: 1fr 100fr 2fr;
+  width: 100%;
+  margin: 0;
+}
+#Grilla__ArmadoPC header {
+  grid-area: header;
+}
+#Grilla__ArmadoPC section.ArmadoPC {
+  grid-area: Componentes;
+}
+#Grilla__ArmadoPC footer {
+  grid-area: footer;
+}
+
+.ArmadoPC {
+  width: auto;
+  margin: 1%;
+}
+.ArmadoPC p {
+  font-size: 2rem;
+}
+.ArmadoPC h1 {
+  font-size: 5rem;
+}
+.ArmadoPC .Borde__ArmadoPC {
+  border: thick solid #a23931;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 1%;
+}
+.ArmadoPC .Borde__ArmadoPC a {
+  text-decoration: none;
+  color: #754185;
+}
+.ArmadoPC .ArmadoPC__Subtitulo {
+  margin-left: 1rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+/*!Contacto*/
+.Contacto {
+  width: 95%;
+  margin: 1%;
+  /**Formulario*/
+}
+.Contacto p, .Contacto legend, .Contacto label {
+  font-size: 2rem;
+}
+.Contacto .Borde__Contacto {
+  border: thick solid #a23931;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.Contacto .Borde__Contacto a {
+  color: beige;
+  text-decoration: none;
+}
+.Contacto h1 {
+  font-size: 5rem;
+}
+.Contacto .Formulario fieldset {
+  width: 30%;
+}
+.Contacto .Formulario .Formulario__Datos {
+  display: flex;
+  margin: 1%;
+  width: auto;
+}
+.Contacto .Formulario .Formulario__Datos--Texto {
+  width: 100%;
+}
+.Contacto .Formulario .Formulario__Datos--Texto input {
+  background-color: #575454;
+  width: 98%;
+  margin: 1% 0;
+  height: 2rem;
+}
+.Contacto .Formulario .Formulario__Datos--Texto--Textarea {
+  width: 98%;
+  background-color: #575454;
+  border-top: solid 2px #212121;
+  border-left: solid 2px #212121;
+}
+.Contacto .Formulario .Formulario__Datos--Botones {
+  width: auto;
+}
+
+footer {
+  height: 50px;
+}
+
+#Footer__Noindex {
+  display: flex;
+  background-color: #5b3f81;
+  height: 5rem;
+  width: 100%;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+#Footer__Index {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  background-color: #5b3f81;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.Footer__Img--Insta {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.Footer__Img--Arriba {
+  position: fixed;
+  bottom: 0.5%;
+  right: 0;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+@media (max-width: 800px) {
+  .Footer__Img--Arriba {
+    margin: 0;
+  }
+  #Footer__Noindex {
+    width: 100vw;
+  }
+  /*!Index*/
+  header {
+    height: 8rem;
+    align-items: center;
+  }
+  nav.Menu__Navegacion {
+    height: auto;
+    width: auto;
+  }
+  li {
+    align-self: center;
+  }
+  ul.Navegacion__Lista {
+    position: absolute;
+    top: 0px;
+    display: grid;
+    grid-area: "Inicio Componentes " "Perifericos ArmadoPC ";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 8rem;
+    width: 60%;
+  }
+  a.Index {
+    grid-area: Inicio;
+  }
+  a.Componentes {
+    grid-area: Componentes;
+  }
+  a.Perifericos {
+    grid-area: Perifericos;
+  }
+  a.ArmadoPC {
+    grid-area: ArmadoPC;
+  }
+  a.Contacto {
+    width: auto;
+    position: absolute;
+    right: 1%;
+    top: 2.5rem;
+  }
+  a {
+    font-size: 1.8rem;
+  }
+  /*!Componentes*/
+  #Grilla__Componentes {
+    display: grid;
+    grid-template-areas: "header header header " ". Componentes ." "footer footer footer";
+    grid-template-rows: auto 10fr auto;
+    grid-template-columns: 1rem 100% 1rem;
+    width: 94vw;
+    margin: 0;
+  }
+  header {
+    grid-area: header;
+  }
+  section.Componentes {
+    grid-area: Componentes;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .Componentes__Titulo {
+    font-size: 3rem;
+  }
+  label.Componentes__Subtitulos {
+    font-size: 3rem;
+  }
+  p.Componentes__Explicacion--Parrafo {
+    font-size: 1.5rem;
+  }
+  .Componentes img {
+    width: 0;
+  }
+  div.Borde__MPGRFA p {
+    font-size: 1.5rem;
+  }
+  label.Componentes__MPGRF--Identificacion {
+    font-size: 2.5rem;
+  }
+  .Componentes__MPGRF--Identificacion--Objeto {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+  }
+  p#Descripcion {
+    margin-bottom: 10%;
+  }
+  table#Tabla__Intel.Componentes__MPGRF--Lista--Procesador, table#Tabla__AMD--Procesador.Componentes__MPGRF--Lista--Procesador, table#Tabla__NVDIA.Componentes__MPGRF--Lista--Grafica, table#Tabla__AMD--Grafica.Componentes__MPGRF--Lista--Grafica,
+table#Tabla__Ram.Componentes__MPGRF--Lista--Ram,
+table#Tabla__Fuente.Componentes__MPGRF--Lista--Fuente, table#Tabla__Almacenamiento.Componentes__MPGRF--Lista--Almacenamiento {
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  th {
+    font-size: 1.2rem;
+  }
+  .Componentes__MPGRF--Lista--Procesador,
+.Componentes__MPGRF--Lista--Grafica,
+.Componentes__MPGRF--Lista--Ram,
+.Componentes__MPGRF--Lista--Fuente,
+.Componentes__MPGRF--Lista--Almacenamiento {
+    width: 100%;
+    margin-left: 3rem;
+  }
+  .Componentes__MPGRF--Lista--Procesador,
+.Componentes__MPGRF--Lista--Grafica,
+.Componentes__MPGRF--Lista--Ram,
+.Componentes__MPGRF--Lista--Fuente,
+.Componentes__MPGRF--Lista--Almacenamiento th, td {
+    text-align: left;
+    vertical-align: top;
+  }
+  #Grilla__Motherboard, #Grilla__Procesador, #Grilla__Grafica, #Grilla__Ram, #Grilla__Fuente, #Grilla__Almacenamiento {
+    display: flex;
+    flex-direction: column;
+  }
+  #Tabla__Intel--Procesador {
+    margin: 1% 0;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #Tabla__AMD--Procesador {
+    margin: 1% 0;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*!Perifericos*/
+  #Grilla__Perifericos--Objetos {
+    display: flex;
+    flex-direction: column;
+  }
+  .Perifericos__Titulo {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  label.Perifericos__Subtitulos {
+    font-size: 3rem;
+  }
+  .Perifericos p {
+    font-size: 1.5rem;
+  }
+  .Perifericos img {
+    width: 0;
+  }
+  /*!Armado PC*/
+  .ArmadoPC h1 {
+    font-size: 3rem;
+  }
+  .ArmadoPC p {
+    font-size: 1.5rem;
+  }
+  /*!Contacto*/
+  .Contacto h1 {
+    font-size: 3rem;
+  }
+  .Contacto p {
+    font-size: 1.5rem;
+  }
+  .Formulario fieldset {
+    width: 100%;
+    height: 70%;
+  }
+  .Contacto legend {
+    font-size: 1.5rem;
+  }
+  .Contacto label {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

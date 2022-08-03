@@ -1,6 +1,19 @@
+$borde: thick solid #a23931;
+/*
+.Borde__MTAMM {
+    display: block;
+    border-width:thick;
+    border-style: solid;
+    border-color: #a23931;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 1%;
+}
+*/
+
 * {
     margin: 0;
-    padding: 0;
+    padding: 10;
 }
 
 html {
@@ -30,48 +43,57 @@ header  {
     font-size: 2rem;
     font-weight: 500;
     justify-content: space-between;
+
+    li  {
+        list-style: none;
+
+        a {
+            color: black;
+            text-decoration: none;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    #Animacion4 {
+        animation-delay: 0.8s;
+    }
+    
+    a:hover {
+        color: #f86c62;
+        font-size: 2rem ;
+    }
+
+    .Navegacion__Lista {
+        li {
+            display: inline-block;
+            list-style: none;
+        }
+        #Animacion1 {
+            animation-delay: 0.2s;
+        }
+        #Animacion2 {
+            animation-delay: 0.4s;
+        }
+        #Animacion3 {
+            animation-delay: 0.6s;
+        }
+    
+        a{
+            color: black;
+            text-decoration: none;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        a:hover {
+            color: #f86c62;
+            font-size: 2rem ;
+        }
+    }   
 }
 
-.Menu__Navegacion ul li {
-    display: inline-block;
-    list-style: none;
-}
-#Animacion1 {
-    animation-delay: 0.2s;
-}
-#Animacion2 {
-    animation-delay: 0.4s;
-}
-#Animacion3 {
-    animation-delay: 0.6s;
-}
-#Animacion4 {
-    animation-delay: 0.8s;
-}
 
-.Menu__Navegacion ul li a {
-    color: black;
-    text-decoration: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.Menu__Navegacion a {
-    color: black;
-    text-decoration: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.Menu__Navegacion a:hover {
-    color: #f86c62;
-    font-size: 2rem ;
-}
-
-.Menu__Navegacion ul li a:hover {
-    color: #f86c62;
-    font-size: 2rem ;
-}
 
 /*!Index*/
 #Grilla__Index {
@@ -108,38 +130,38 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
-.Logo__Img {    
-    width: calc(18vw + 8vh);
+    img {
+        width: calc(18vw + 8vh);
 
-    border-radius: 20%;
-    border-width: thick;
-    border-style: solid;
-    border-color: #a23931;
+        border-radius: 20%;
+        border-width: thick;
+        border-style: solid;
+        border-color: #a23931;
+    
+        align-self: center;
+    }
 
-    align-self: center;
-}
+    h1 {
+        font-size:calc(5vw + 4vh);
+        color: #f86c62;
+    
+        text-align: center;
+        justify-self: center;
+    }
 
-.Logo h1 {
-    font-size:calc(5vw + 4vh);
-    color: #f86c62;
-
-    text-align: center;
-    justify-self: center;
-}
-
-.Logo__Descripcion {
-    width: 80%;
-    text-align: center;
-    border-radius: 20px;
-    border-width: thick;
-    border-style: solid;
-    border-color: #ac3931;
-
-    font-size: 200%;
-    padding: 0.5rem;
-    color: #f86c62;
+    .Logo__Descripcion {
+        width: 80%;
+        text-align: center;
+        border-radius: 20px;
+        border-width: thick;
+        border-style: solid;
+        border-color: #ac3931;
+    
+        font-size: 200%;
+        padding: 0.5rem;
+        color: #f86c62;
+    }
 }
 
 /*!Componentes*/
@@ -168,90 +190,85 @@ footer {
 .Componentes {
     width: auto;
     margin: 1%;
-}
 
-#Borde__Componentes--Explicacion {
-    border-width:thick;
-    border-style: solid;
-    border-color: #a23931;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-bottom: 1%;
-}
+    .Componentes__Titulo {
+        font-size: 5rem;
+        font-weight: bold;
+    }
 
-.Componentes__Explicacion--Parrafo {
-    font-size: 2rem;
-}
+    .Componentes__Explicacion--Parrafo {
+        font-size: 2rem;
+    }
 
-.Componentes__Titulo {
-    font-size: 5rem;
-    font-weight: bold;
-}
+    .Borde__MPGRFA {
+        display: block;
+        border: $borde;
+        border-radius: 1rem;
+        padding: 1%;
+        margin-bottom: 1%;
+    }
 
-/**Componenes General*/
-.Componentes p {
-    font-size: 2rem;
-}
+    p {
+        font-size: 2rem;
+    }
 
-.Componentes__Subtitulos /*Subtitulos*/ {
-    font-size: 5rem;
-    font-weight: bold;
-}
+    .Componentes__Subtitulos {
+        font-size: 5rem;
+        font-weight: bold;
+    }
 
-.Componentes__Imagenes{
-    width: 100%;
-}
-.Componentes__Imagenes--Almacenamiento{
-    width: 90%;
+    .Componentes__Imagenes {
+        width: 100%;
+    }
+
+    .Componentes__Imagenes--Almacenamiento{
+        width: 90%;
+    }
+    
+    .Componentes__MPGRF {
+        margin-top: 2rem;
+        display: flex;
+        height: 15%;
+    }
+    
+    .Componentes__MPGRF p {
+        margin-left: 2rem;
+        width: 100%;
+    }
+    
+    .Componentes__MPGRF--Identificacion {
+        font-size: 3rem;
+    }
+    
+    .Componentes__MPGRF--Identificacion--Objeto {
+        margin-left: 1rem;
+        font-size: 3rem;
+    }
+    
+    .Componentes__MPGRF--Identificacion--Parrafo { 
+        margin-left: 3rem;
+    }
+    
+    .Componentes__MPGRF--Identificacion--Parrafo span { 
+        text-decoration: underline;
+    }
+
+    li {
+        list-style: none;
+        font-size: 1.7rem;
+    }
+
+    th {
+        font-size: 2rem;
+    }
+
+    ul {
+        padding: 0;
+    }
 }
 
 /*MMPGRFF (Mother, Procesador, Grafica, Ram y Fuente)*/
-.Componentes__MPGRF {
-    margin-top: 2rem;
-    display: flex;
-    height: 15%;
-}
 
-.Componentes__MPGRF p {
-    margin-left: 2rem;
-    width: 100%;
-}
-
-.Componentes__MPGRF--Identificacion {
-    font-size: 3rem;
-}
-
-.Componentes__MPGRF--Identificacion--Objeto {
-    margin-left: 1rem;
-    font-size: 3rem;
-}
-
-.Componentes__MPGRF--Identificacion--Parrafo { 
-    margin-left: 3rem;
-}
-
-.Componentes__MPGRF--Identificacion--Parrafo span { 
-    text-decoration: underline;
-}
-
-li {
-    list-style: none;
-    font-size: 1.7rem;
-}
-
-th {
-    font-size: 10rem;
-}
-
-.Borde__MPGRFA {
-    display: block;
-    border-width:thick;
-    border-style: solid;
-    border-color: #a23931;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-bottom: 1%;
-}
 
 /**Motherboard*/
 #Grilla__Motherboard {
@@ -266,18 +283,19 @@ th {
 
     height: fit-content;
     width: 100%;
+    
+    .Componentes__Subtitulos {
+        grid-area: Titulo;
+    }
+    div img{
+        grid-area: Img;
+    }
+    #Descripcion{
+        grid-area: Descripcion;
+    }
+    #Identificacion {
+        grid-area: Identificacion;
 }
-.Componentes__Subtitulos {
-    grid-area: Titulo;
-}
-div img{
-    grid-area: Img;
-}
-#Descripcion{
-    grid-area: Descripcion;
-}
-#Identificacion {
-    grid-area: Identificacion;
 }
 
 /**Procesador*/
@@ -296,73 +314,64 @@ div img{
 
     height: fit-content;
     width: 100%;
-}
-.Componentes__Subtitulos {
-    grid-area: Titulo;
-}
-div img{
-    grid-area: Img;
-}
-#Descripcion{
-    grid-area: Descripcion;
-}
-#Identificacion__Intel {
-    grid-area: Identificacion__Intel;
-}
-#Tabla__Intel--Procesador {
-    grid-area: Tabla__Intel;
-    margin: 1% 3rem;
-    display: flex;
-    width: 80rem;
-}
-#Identificacion__AMD {
-    grid-area: Identificacion__AMD;
-}
-#Tabla__AMD--Procesador {
-    grid-area: Tabla__AMD;
-    margin: 1% 3rem;
-    display: flex;
-    width: 80rem;
-}
 
-.Componentes__MPGRF--Lista--Procesador{
-    width:80rem;
-    margin-left: 3rem;
-}
-
-.Componentes__MPGRF--Lista--Procesador th, td{
-    text-align: left;
-    vertical-align: top;
+    .Componentes__Subtitulos {
+        grid-area: Titulo;
+    }
+    div img{
+        grid-area: Img;
+    }
+    #Descripcion{
+        grid-area: Descripcion;
+    }
+    #Identificacion__Intel {
+        grid-area: Identificacion__Intel;
+    }
+    #Tabla__Intel--Procesador {
+        grid-area: Tabla__Intel;
+        margin: 1% 3rem;
+        display: flex;
+        width: 80rem;
+    }
+    #Identificacion__AMD {
+        grid-area: Identificacion__AMD;
+    }
+    #Tabla__AMD--Procesador {
+        grid-area: Tabla__AMD;
+        margin: 1% 3rem;
+        display: flex;
+        width: 80rem;
+    }
 }
 
 .Componentes__MPGRF--Lista--Procesador--Intel{
     width:auto;
     margin: 0;
-}
 
-.Componentes__MPGRF--Lista--Procesador--Intel th{
-    height: 1%;
-}
+    th {
+        height: 1%;
+    }
 
-.Componentes__MPGRF--Lista--Procesador--Intel th, td{
-    text-align: left;
-    vertical-align: top;
-    width: 20rem;
+    th, td {
+        width: 20rem;
+        text-align: left;
+        vertical-align: top;
+    }
 }
 
 .Componentes__MPGRF--Lista--Procesador--AMD{
     width:auto;
     margin: 0;
-}
 
-.Componentes__MPGRF--Lista--Procesador--AMD th{
-    height: 1%;
-}
+    th {
+        height: 1%;
+    }
 
-.Componentes__MPGRF--Lista--Procesador--AMD th, td{
-    text-align: left;
-    vertical-align: top;
-    width: 20rem;
+    th, td{
+        text-align: left;
+        vertical-align: top;
+        width: 20rem;
+    }
 }
 
 /**Grafica*/
@@ -381,39 +390,44 @@ div img{
 
     height: fit-content;
     width: 100%;
-}
-.Componentes__Subtitulos {
-    grid-area: Titulo;
-}
-div img{
-    grid-area: Img;
-}
-#Descripcion{
-    grid-area: Descripcion;
-}
-#Identificacion__NVDIA {
-    grid-area: Identificacion__NVDIA;
-}
-#Tabla__NVDIA {
-    grid-area: Tabla__NVDIA;
-    margin: 1% 3rem;
-}
-#Identificacion__AMD--Grafica {
-    grid-area: Identificacion__AMD;
-}
-#Tabla__AMD--Grafica {
-    grid-area: Tabla__AMD;
-    margin: 1% 3rem;
+
+    .Componentes__Subtitulos {
+        grid-area: Titulo;
+    }
+    div img{
+        grid-area: Img;
+    }
+    #Descripcion{
+        grid-area: Descripcion;
+    }
+    #Identificacion__NVDIA {
+        grid-area: Identificacion__NVDIA;
+    }
+    #Tabla__NVDIA {
+        grid-area: Tabla__NVDIA;
+        margin: 1% 3rem;
+    }
+    #Identificacion__AMD--Grafica {
+        grid-area: Identificacion__AMD;
+    }
+    #Tabla__AMD--Grafica {
+        grid-area: Tabla__AMD;
+        margin: 1% 3rem;
+    }
 }
 
 .Componentes__MPGRF--Lista--Grafica{
     width: 70rem;
     margin-left: 3rem;
-}
 
-.Componentes__MPGRF--Lista--Grafica th, td{
-    text-align: left;
-    vertical-align: top;
+    th {
+        height: 1%;
+    }
+
+    th, td {
+        text-align: left;
+        vertical-align: top;
+    }
 }
 
 /**Ram*/
@@ -430,33 +444,34 @@ div img{
 
     height: fit-content;
     width: 100%;
-}
-.Componentes__Subtitulos {
-    grid-area: Titulo;
-}
-div img{
-    grid-area: Img;
-}
-#Descripcion{
-    grid-area: Descripcion;
-}
-#Identificacion__Ram {
-    grid-area: Identificacion;
-}
-#Tabla__Ram {
-    grid-area: Tabla;
-    margin: 1% 3rem;
+
+    .Componentes__Subtitulos {
+        grid-area: Titulo;
+    }
+    div img{
+        grid-area: Img;
+    }
+    #Descripcion{
+        grid-area: Descripcion;
+    }
+    #Identificacion__Ram {
+        grid-area: Identificacion;
+    }
+    #Tabla__Ram {
+        grid-area: Tabla;
+        margin: 1% 3rem;
+    }
 }
 
 .Componentes__MPGRF--Lista--Ram {
     width: 25rem;
     margin-left: 3rem;
-}
 
-.Componentes__MPGRF--Lista--Ram th, td {
-    width: 10rem;
-    text-align: left;
-    vertical-align: top;
+    th, td {
+        width: 10rem;
+        text-align: left;
+        vertical-align: top;
+    }
 }
 
 /**Fuente*/
@@ -473,33 +488,33 @@ div img{
 
     height: fit-content;
     width: 100%;
-}
-.Componentes__Subtitulos {
-    grid-area: Titulo;
-}
-div img{
-    grid-area: Img;
-}
-#Descripcion{
-    grid-area: Descripcion;
-}
-#Identificacion__Fuente {
-    grid-area: Identificacion;
-}
-#Tabla__Fuente {
-    grid-area: Tabla;
-    margin: 1% 3rem;
+
+    .Componentes__Subtitulos {
+        grid-area: Titulo;
+    }
+    div img{
+        grid-area: Img;
+    }
+    #Descripcion{
+        grid-area: Descripcion;
+    }
+    #Identificacion__Fuente {
+        grid-area: Identificacion;
+    }
+    #Tabla__Fuente {
+        grid-area: Tabla;
+        margin: 1% 3rem;
+    }
 }
 
 .Componentes__MPGRF--Lista--Fuente {
-    width: 25rem;
+    width: fit-content;
     margin-left: 3rem;
-}
 
-.Componentes__MPGRF--Lista--Fuente th, td {
-    width: 10rem;
-    text-align: left;
-    vertical-align: top;
+    th, td {
+        text-align: left;
+        vertical-align: top;
+    }
 }
 
 /**Almacenamiento*/
@@ -517,35 +532,36 @@ div img{
 
     height: fit-content;
     width: 100%;
-}
-.Componentes__Subtitulos {
-    grid-area: Titulo;
-}
-div img{
-    grid-area: Img;
-}
-#Descripcion{
-    grid-area: Descripcion;
-}
-#Identificacion__HDD {
-    grid-area: Identificacion__HDD;
-}
-#Identificacion__SSD {
-    grid-area: Identificacion__SSD;
-}
-#Tabla__Almacenamiento {
-    grid-area: Tabla;
-    margin: 1% 3rem;
+
+    .Componentes__Subtitulos {
+        grid-area: Titulo;
+    }
+    div img{
+        grid-area: Img;
+    }
+    #Descripcion{
+        grid-area: Descripcion;
+    }
+    #Identificacion__HDD {
+        grid-area: Identificacion__HDD;
+    }
+    #Identificacion__SSD {
+        grid-area: Identificacion__SSD;
+    }
+    #Tabla__Almacenamiento {
+        grid-area: Tabla;
+        margin: 1% 3rem;
+    }
 }
 
 .Componentes__MPGRF--Lista--Almacenamiento{
     width: 70rem;
     margin-left: 3rem;
-}
 
-.Componentes__MPGRF--Lista--Almacenamiento th, td{
-    text-align: left;
-    vertical-align: top;
+    th, td {
+        text-align: left;
+        vertical-align: top;
+    }
 }
 
 /*!Perifericos*/
@@ -560,129 +576,76 @@ div img{
 
     width: 100%;
     margin: 0;
-}
-header {
-    grid-area: header;
-}
-section.Perifericos {
-    grid-area: Perifericos;       
-}
-footer {
-    grid-area: footer;
+
+    header {
+        grid-area: header;
+    }
+    section.Perifericos {
+        grid-area: Perifericos;       
+    }
+    footer {
+        grid-area: footer;
+    }
 }
 
 .Perifericos {
     width: auto;
     margin: 1%;
-}
 
-.Perifericos__Titulo {
-    font-size: 5rem;
-}
+    .Perifericos__Titulo {
+        font-size: 5rem;
+    }
 
-#Borde__Perifericos--Explicacion {
-    padding: 1rem;
-    border-width:thick;
-    border-style: solid;
-    border-color: #a23931;
-    border-radius: 1rem;
-    margin-bottom: 1%;
-}
+    .Perifericos__Explicacion--Parrafo {
+        font-size: 2rem;
+    }
 
-.Perifericos__Explicacion--Parrafo {
-    font-size: 2rem;
-}
+    #Grilla__Perifericos--Objetos {
+        display: grid;
+        grid-template-areas: 
+        "Titulo Titulo"
+        "Img Descripcion";
+    
+        grid-template-columns: 25rem auto;
+        grid-template-rows: 6rem 25rem;
+    
+        height: auto; /*Viewport height*/ /*Viewport = Pantalla*/
+        width: 100%;
+        margin: 0;
+        
+        .Perifericos__Subtitulos{
+            grid-area: Titulo;
+        }
+        .Perifericos__Imagenes {
+            grid-area: Img;
+        }
+        #Descripcion{
+            grid-area: Descripcion;
+        }
+    }
 
-.Perifericos h1 {
-    font-size: 5rem;
-}
+    .Borde__MTAMM {
+        display: block;
+        border-width:thick;
+        border-style: solid;
+        border-color: #a23931;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 1%;
+    }
 
-/**Perifericos General*/
-.Perifericos p {
-    font-size: 2rem;
-}
+    .Perifericos__Subtitulos /*Subtitulos*/ {
+        font-size: 5rem;
+        font-weight: bold;
+    }
 
-.Perifericos__Subtitulos /*Subtitulos*/ {
-    font-size: 5rem;
-    font-weight: bold;
-}
-
-.Perifericos__Imagenes{
-    width: 100%;    
-}
-
-/*MTAMM (Mouse, Teclado, Aubriculares, Monitor y Mousepad)*/
-.Perifericos__MTAMM {
-    margin-top: 2rem;
-    display: flex;
-    height: 15%;
-}
-
-.Perifericos__MTAMM p {
-    margin-left: 2rem;
-    width: 100%;
-}
-
-.Perifericos__MTAMM--Identificacion {
-    font-size: 3rem;
-}
-
-.Perifericos__MTAMM--Identificacion--Objeto {
-    margin-left: 1rem;
-}
-
-.Perifericos__MTAMM--Identificacion--Parrafo { 
-    margin-left: 3rem;
-}
-
-.Perifericos__MTAMM--Identificacion--Parrafo span { 
-    text-decoration: underline;
-}
-
-h2, h3, h4, h5, h6 /*Subtitulos*/ {
-    margin-left: 1rem;
-    font-size: 4rem;
-}
-
-li {
-    list-style: none;
-}
-
-th {
-    font-size: 1.7rem;
-}
-
-.Borde__MTAMM {
-    display: block;
-    border-width:thick;
-    border-style: solid;
-    border-color: #a23931;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 1%;
-}
-
-#Grilla__Perifericos--Objetos {
-    display: grid;
-    grid-template-areas: 
-    "Titulo Titulo"
-    "Img Descripcion";
-
-    grid-template-columns: 25rem auto;
-    grid-template-rows: 6rem 25rem;
-
-    height: auto; /*Viewport height*/ /*Viewport = Pantalla*/
-    width: 100%;
-    margin: 0;
-}
-.Perifericos__Subtitulos{
-    grid-area: Titulo;
-}
-.Perifericos__Imagenes {
-    grid-area: Img;
-}
-#Descripcion{
-    grid-area: Descripcion;
+    .Perifericos__Imagenes{
+        width: 100%;    
+    }
+    
+    p {
+        font-size: 2rem;
+    }
 }
 
 /*!Armado PC*/
@@ -697,116 +660,107 @@ th {
 
     width: 100%;
     margin: 0;
-}
-header {
-    grid-area: header;
-}
-section.ArmadoPC {
-    grid-area: Componentes;       
-}
-footer {
-    grid-area: footer;
+
+    header {
+        grid-area: header;
+    }
+    section.ArmadoPC {
+        grid-area: Componentes;       
+    }
+    footer {
+        grid-area: footer;
+    }
 }
 
 .ArmadoPC {
     width: auto;
     margin: 1%;
-}
 
-.ArmadoPC p {
-    font-size: 2rem ;
-}
+    p {
+        font-size: 2rem;
+    }
 
-.ArmadoPC h1 {
-    font-size: 5rem;
-}
+    h1 {
+        font-size: 5rem;
+    }
 
-.ArmadoPC__Subtitulo {
-    margin-left: 1rem;
-    font-size: 5rem;
-    font-weight: bold;
-}
+    .Borde__ArmadoPC {
+        border: $borde;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 1%;
 
-.Borde__ArmadoPC {
-    border-width:thick;
-    border-style: solid;
-    border-color: #a23931;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 1%;
-}
+        a {
+            text-decoration: none;
+            color: #754185;
+        }
+    }
 
-.Borde__ArmadoPC a {
-    text-decoration: none;
-    color: #754185;
+    .ArmadoPC__Subtitulo {
+        margin-left: 1rem;
+        font-size: 5rem;
+        font-weight: bold;
+    }
 }
 
 /*!Contacto*/
 .Contacto {
     width: 95%;
     margin: 1%;
-}
 
-.Contacto p{
-    font-size: 2rem;
-}
+    p, legend, label {
+        font-size: 2rem;
+    }
 
-.Contacto legend{
-    font-size: 2rem;
-}
+    .Borde__Contacto {
+        border: $borde;
+        border-radius: 1rem;
+        padding: 2rem;
 
-.Contacto label{
-    font-size: 2rem;
-}
+        a {
+            color: beige;
+            text-decoration: none;
+        }
+    }
 
-.Borde__Contacto {
-    border-width:thick;
-    border-style: solid;
-    border-color: #a23931;
-    border-radius: 1rem;
-    padding: 2rem;
-}
+    h1 {
+        font-size: 5rem;
+    }
 
-.Contacto h1 {
-    font-size: 5rem;
-}
+    /**Formulario*/
+    .Formulario {
+        fieldset {
+            width: 30%;
+        }
+        
+        .Formulario__Datos {
+            display: flex;
+            margin: 1%;
+            width: auto;
+        }
+        
+        .Formulario__Datos--Texto {
+            width: 100%;
 
-.Contacto__Introduccion a {
-    color: beige;
-    text-decoration: none;
-}
-
-/**Formulario*/
-.Formulario fieldset {
-    width: 30%;
-}
-
-.Formulario__Datos {
-    display: flex;
-    margin: 1%;
-    width: auto;
-}
-
-.Formulario__Datos--Texto {
-    width: 100%;
-}
-
-.Formulario__Datos--Texto input {
-    background-color: #575454;
-    width:98%;
-    margin: 1% 0;
-    height: 2rem;
-}
-
-.Formulario__Datos--Texto--Textarea{
-    width:98%;
-    background-color: #575454;
-    border-top: solid 2px #212121;
-    border-left: solid 2px #212121;
-}
-
-.Formulario__Datos--Botones {
-    width: auto;
+            input {
+                background-color: #575454;
+                width:98%;
+                margin: 1% 0;
+                height: 2rem;
+            }
+        }
+        
+        .Formulario__Datos--Texto--Textarea{
+            width:98%;
+            background-color: #575454;
+            border-top: solid 2px #212121;
+            border-left: solid 2px #212121;
+        }
+        
+        .Formulario__Datos--Botones {
+            width: auto;
+        }
+    }
 }
 
 footer {

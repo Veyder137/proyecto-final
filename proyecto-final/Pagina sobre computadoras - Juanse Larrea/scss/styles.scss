@@ -1,10 +1,19 @@
 $background-color: linear-gradient(to bottom, #190f25, #1d0b0f, #190f25);
 $header_footer-color: #5b3f81;
-$color-logo: #f86c62;
-$text: 2rem;
-$subtitle_Title-text: 5rem;
+$color-logo: #cf4e45;
 $border: thick solid #a23931;
 $link-color: beige;
+$tamanios: (
+    tamanio__tabla: 1.7rem,
+    tamanio__p: 2rem,
+    tamanio__ide: 3.5rem,
+    tamanio__sub: 5rem
+);
+$pesos: (
+    peso__ideo: 600px,
+    peso__ide: 700px,
+    peso__sub: 800px
+);
 
 @import "./header";
 @import "./footer";
@@ -20,9 +29,9 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: $background-color;
-    color: #AAACC5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #190f25;
+    color: #d2d4e7;
 }
 
 /*!Index*/
@@ -64,8 +73,6 @@ footer {
     img {
         width: calc(18vw + 8vh);
 
-        border: $border;
-        border-color: $color-logo;
         border-radius: 20%;
     
         align-self: center;
@@ -81,15 +88,13 @@ footer {
 
     .Logo__Descripcion {
         width: 80%;
+        font-size: 200%;
+        padding: 0.5rem;
         text-align: center;
 
         border: $border;
         border-color: $color-logo;
         border-radius: 20px;
-    
-        font-size: 200%;
-        padding: 0.5rem;
-        color: $color-logo;
     }
 }
 
@@ -122,12 +127,12 @@ footer {
     margin: 1%;
 
     .Componentes__Titulo {
-        font-size: $subtitle_Title-text;
-        font-weight: bolder;
+        font-size: map-get($tamanios , tamanio__sub);
+        font-weight: map-get($pesos, peso__sub);
     }
 
     .Componentes__Explicacion--Parrafo {
-        font-size: 2rem;
+        font-size: map-get($tamanios , tamanio__p);
     }
 
     .Borde__MPGRFA {
@@ -139,11 +144,13 @@ footer {
     }
 
     p {
-        font-size: $text;
+        font-size: map-get($tamanios , tamanio__p);
+        margin-top: 0.7rem;
     }
 
     .Componentes__Subtitulos {
-        font-size: $subtitle_Title-text;
+        font-size: map-get($tamanios , tamanio__sub);
+        font-weight: map-get($pesos, peso__sub);
     }
 
     .Componentes__Imagenes {
@@ -171,16 +178,13 @@ footer {
     }
     
     .Componentes__MPGRF--Identificacion {
-        font-size: 3rem;
+        font-size: map-get($tamanios , tamanio__ide);
+        font-weight: map-get($pesos, peso__ide);
     }
     
     .Componentes__MPGRF--Identificacion--Objeto {
-        margin-left: 1rem;
-        font-size: 3rem;
-    }
-    
-    .Componentes__MPGRF--Identificacion--Parrafo { 
-        margin-left: 3rem;
+        font-size: map-get($tamanios , tamanio__ide);
+        font-weight: map-get($pesos, peso__ideo);
     }
     
     .Componentes__MPGRF--Identificacion--Parrafo span { 
@@ -189,11 +193,11 @@ footer {
 
     li {
         list-style: none;
-        font-size: 1.7rem;
+        font-size: map-get($tamanios , tamanio__tabla);
     }
 
     th {
-        font-size: 2rem;
+        font-size: map-get($tamanios , tamanio__p);
     }
 
     ul {
@@ -312,8 +316,8 @@ footer {
     grid-template-areas: 
     "Titulo Titulo"
     "Img Descripcion"
-    "Identificacion__NVDIA Identificacion__NVDIA"
-    "Tabla__NVDIA Tabla__NVDIA"
+    "Identificacion__NVIDIA Identificacion__NVIDIA"
+    "Tabla__NVIDIA Tabla__NVIDIA"
     "Identificacion__AMD Identificacion__AMD"
     "Tabla__AMD Tabla__AMD";
 
@@ -332,11 +336,11 @@ footer {
     #Descripcion{
         grid-area: Descripcion;
     }
-    #Identificacion__NVDIA {
-        grid-area: Identificacion__NVDIA;
+    #Identificacion__NVIDIA {
+        grid-area: Identificacion__NVIDIA;
     }
-    #Tabla__NVDIA {
-        grid-area: Tabla__NVDIA;
+    #Tabla__NVIDIA {
+        grid-area: Tabla__NVIDIA;
         margin: 1% 3rem;
     }
     #Identificacion__AMD--Grafica {
@@ -525,16 +529,16 @@ footer {
     margin: 1%;
 
     .Perifericos__Titulo {
-        font-size: $subtitle_Title-text;
-        font-weight: bolder;
+        font-size: map-get($tamanios , tamanio__sub);
+        font-weight: map-get($pesos, peso__sub);
     }    
     
     .Perifericos__Subitulo {
-        font-size: $subtitle_Title-text;
+        font-size: map-get($tamanios , tamanio__sub);
     }
 
     .Perifericos__Explicacion--Parrafo {
-        font-size: 2rem;
+        font-size: map-get($tamanios , tamanio__p);
     }
 
     #Grilla__Perifericos--Objetos {
@@ -572,11 +576,11 @@ footer {
     }
     
     p {
-        font-size: $text;
+        font-size: map-get($tamanios , tamanio__p);
     }
 
     .Perifericos__Subtitulos /*Subtitulos*/ {
-        font-size: 5rem;
+        font-size: map-get($tamanios , tamanio__sub);
     }
 
     .Perifericos__Imagenes{
@@ -613,12 +617,12 @@ footer {
     margin: 1%;
 
     p {
-        font-size: $text;
+        font-size: map-get($tamanios , tamanio__p);
     }
 
     .ArmadoPC__Titulo {
-        font-size: $subtitle_Title-text;
-        font-weight: bolder;
+        font-size: map-get($tamanios , tamanio__sub);
+        font-weight: map-get($pesos, peso__sub);
     }
 
     .Borde__ArmadoPC {
@@ -634,7 +638,7 @@ footer {
     }
 
     .ArmadoPC__Subtitulo {  
-        font-size: $subtitle_Title-text;
+        font-size: map-get($tamanios , tamanio__sub);
     }
 }
 
@@ -644,22 +648,23 @@ footer {
     margin: 1%;
 
     p, legend, label {
-        font-size: $text;
+        font-size: map-get($tamanios , tamanio__p);
     }
 
     .Borde__Contacto {
-        border: $border;
-        border-radius: 1rem;
         padding: 2rem;
 
         a {
             color: beige;
             text-decoration: none;
         }
+    
+    /*
+    margin-bottom: calc();*/
     }
 
     .Contacto__Subtitulo {
-        font-size: 5rem;
+        font-size: map-get($tamanios , tamanio__p);
     }
 
     /**Formulario*/
@@ -694,6 +699,11 @@ footer {
         
         .Formulario__Datos--Botones {
             width: auto;
+            background-color: white;
+            text-align: center;
+            color: black;
+            border: 1px solid black;
+            border-radius: 0.5rem;
         }
     }
 }

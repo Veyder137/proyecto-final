@@ -1,17 +1,16 @@
 header  {
     background-color: $header_footer-color;
-    height: 5rem;
+    height: 6rem;
     width: 100%;
     overflow: visible;
 
-    
 
 .Menu__Navegacion {
     padding: 0;
     display: flex;
     align-items: center;
     overflow: visible;
-    height: 5rem;
+    height: 6rem;
     width: 99%;
     font-size: 2rem;
     font-weight: 500;
@@ -28,7 +27,6 @@ header  {
 
             &:hover {
                 color: #f86c62;
-                font-size: 2.2rem ;
             }
         }
     }
@@ -60,7 +58,6 @@ header  {
         
             &:hover {
                 color: #f86c62;
-                font-size: 2.2rem ;
             }
         }
     }   

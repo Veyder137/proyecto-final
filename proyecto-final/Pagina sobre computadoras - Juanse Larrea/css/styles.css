@@ -1,6 +1,6 @@
 header {
   background-color: #5b3f81;
-  height: 5rem;
+  height: 6rem;
   width: 100%;
   overflow: visible;
 }
@@ -9,7 +9,7 @@ header .Menu__Navegacion {
   display: flex;
   align-items: center;
   overflow: visible;
-  height: 5rem;
+  height: 6rem;
   width: 99%;
   font-size: 2rem;
   font-weight: 500;
@@ -26,7 +26,6 @@ header .Menu__Navegacion li a {
 }
 header .Menu__Navegacion li a:hover {
   color: #f86c62;
-  font-size: 2.2rem;
 }
 header .Menu__Navegacion #Animacion4 {
   animation-delay: 0.8s;
@@ -52,7 +51,6 @@ header .Menu__Navegacion .Navegacion__Lista a {
 }
 header .Menu__Navegacion .Navegacion__Lista a:hover {
   color: #f86c62;
-  font-size: 2.2rem;
 }
 
 footer {
@@ -286,9 +284,9 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(to bottom, #190f25, #1d0b0f, #190f25);
-  color: #AAACC5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #190f25;
+  color: #d2d4e7;
 }
 
 /*!Index*/
@@ -327,26 +325,23 @@ footer {
 }
 #Logo img {
   width: calc(18vw + 8vh);
-  border: thick solid #a23931;
-  border-color: #f86c62;
   border-radius: 20%;
   align-self: center;
 }
 #Logo h1 {
   font-size: calc(5vw + 4vh);
-  color: #f86c62;
+  color: #cf4e45;
   text-align: center;
   justify-self: center;
 }
 #Logo .Logo__Descripcion {
   width: 80%;
-  text-align: center;
-  border: thick solid #a23931;
-  border-color: #f86c62;
-  border-radius: 20px;
   font-size: 200%;
   padding: 0.5rem;
-  color: #f86c62;
+  text-align: center;
+  border: thick solid #a23931;
+  border-color: #cf4e45;
+  border-radius: 20px;
 }
 
 /*!Componentes*/
@@ -374,7 +369,7 @@ footer {
 }
 .Componentes .Componentes__Titulo {
   font-size: 5rem;
-  font-weight: bolder;
+  font-weight: 800px;
 }
 .Componentes .Componentes__Explicacion--Parrafo {
   font-size: 2rem;
@@ -388,9 +383,11 @@ footer {
 }
 .Componentes p {
   font-size: 2rem;
+  margin-top: 0.7rem;
 }
 .Componentes .Componentes__Subtitulos {
   font-size: 5rem;
+  font-weight: 800px;
 }
 .Componentes .Componentes__Imagenes {
   width: 100%;
@@ -412,14 +409,12 @@ footer {
   width: 100%;
 }
 .Componentes .Componentes__MPGRF--Identificacion {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 700px;
 }
 .Componentes .Componentes__MPGRF--Identificacion--Objeto {
-  margin-left: 1rem;
-  font-size: 3rem;
-}
-.Componentes .Componentes__MPGRF--Identificacion--Parrafo {
-  margin-left: 3rem;
+  font-size: 3.5rem;
+  font-weight: 600px;
 }
 .Componentes .Componentes__MPGRF--Identificacion--Parrafo span {
   text-decoration: underline;
@@ -524,7 +519,7 @@ footer {
 /**Grafica*/
 #Grilla__Grafica {
   display: grid;
-  grid-template-areas: "Titulo Titulo" "Img Descripcion" "Identificacion__NVDIA Identificacion__NVDIA" "Tabla__NVDIA Tabla__NVDIA" "Identificacion__AMD Identificacion__AMD" "Tabla__AMD Tabla__AMD";
+  grid-template-areas: "Titulo Titulo" "Img Descripcion" "Identificacion__NVIDIA Identificacion__NVIDIA" "Tabla__NVIDIA Tabla__NVIDIA" "Identificacion__AMD Identificacion__AMD" "Tabla__AMD Tabla__AMD";
   grid-template-columns: 25rem auto;
   grid-template-rows: 6rem 25rem fit-content auto auto auto;
   height: fit-content;
@@ -539,11 +534,11 @@ footer {
 #Grilla__Grafica #Descripcion {
   grid-area: Descripcion;
 }
-#Grilla__Grafica #Identificacion__NVDIA {
-  grid-area: Identificacion__NVDIA;
+#Grilla__Grafica #Identificacion__NVIDIA {
+  grid-area: Identificacion__NVIDIA;
 }
-#Grilla__Grafica #Tabla__NVDIA {
-  grid-area: Tabla__NVDIA;
+#Grilla__Grafica #Tabla__NVIDIA {
+  grid-area: Tabla__NVIDIA;
   margin: 1% 3rem;
 }
 #Grilla__Grafica #Identificacion__AMD--Grafica {
@@ -700,7 +695,7 @@ footer {
 }
 .Perifericos .Perifericos__Titulo {
   font-size: 5rem;
-  font-weight: bolder;
+  font-weight: 800px;
 }
 .Perifericos .Perifericos__Subitulo {
   font-size: 5rem;
@@ -771,7 +766,7 @@ footer {
 }
 .ArmadoPC .ArmadoPC__Titulo {
   font-size: 5rem;
-  font-weight: bolder;
+  font-weight: 800px;
 }
 .ArmadoPC .Borde__ArmadoPC {
   border: thick solid #a23931;
@@ -797,16 +792,16 @@ footer {
   font-size: 2rem;
 }
 .Contacto .Borde__Contacto {
-  border: thick solid #a23931;
-  border-radius: 1rem;
   padding: 2rem;
+  /*
+  margin-bottom: calc();*/
 }
 .Contacto .Borde__Contacto a {
   color: beige;
   text-decoration: none;
 }
 .Contacto .Contacto__Subtitulo {
-  font-size: 5rem;
+  font-size: 2rem;
 }
 .Contacto .Formulario fieldset {
   width: 30%;
@@ -833,6 +828,11 @@ footer {
 }
 .Contacto .Formulario .Formulario__Datos--Botones {
   width: auto;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -153,17 +153,19 @@ footer {
         font-weight: map-get($pesos, peso__sub);
     }
 
-    .Componentes__Imagenes {
-        width: 100%;
+    .Componentes__Imagenes{
+        width: 98%;
+        margin-top: 1.5rem; 
+    }
+
+    .Componentes__Imagenes--Motherboard {
+        width: 98%;
+        margin-top: 1rem; 
     }
 
     a {
         text-decoration: none;
         color: #754185;
-    }
-
-    .Componentes__Imagenes--Almacenamiento{
-        width: 90%;
     }
     
     .Componentes__MPGRF {
@@ -548,7 +550,7 @@ footer {
         "Img Descripcion";
     
         grid-template-columns: 25rem auto;
-        grid-template-rows: 6rem 25rem;
+        grid-template-rows: 6rem auto;
     
         height: auto; /*Viewport height*/ /*Viewport = Pantalla*/
         width: 100%;
@@ -584,7 +586,8 @@ footer {
     }
 
     .Perifericos__Imagenes{
-        width: 100%;    
+        width: 98%;
+        margin-top: 0.8rem;    
     }
 }
 

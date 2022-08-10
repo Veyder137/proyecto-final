@@ -390,14 +390,16 @@ footer {
   font-weight: 800px;
 }
 .Componentes .Componentes__Imagenes {
-  width: 100%;
+  width: 98%;
+  margin-top: 1.5rem;
+}
+.Componentes .Componentes__Imagenes--Motherboard {
+  width: 98%;
+  margin-top: 1rem;
 }
 .Componentes a {
   text-decoration: none;
   color: #754185;
-}
-.Componentes .Componentes__Imagenes--Almacenamiento {
-  width: 90%;
 }
 .Componentes .Componentes__MPGRF {
   margin-top: 2rem;
@@ -707,7 +709,7 @@ footer {
   display: grid;
   grid-template-areas: "Titulo Titulo" "Img Descripcion";
   grid-template-columns: 25rem auto;
-  grid-template-rows: 6rem 25rem;
+  grid-template-rows: 6rem auto;
   height: auto; /*Viewport height*/ /*Viewport = Pantalla*/
   width: 100%;
   margin: 0;
@@ -735,7 +737,8 @@ footer {
   font-size: 5rem;
 }
 .Perifericos .Perifericos__Imagenes {
-  width: 100%;
+  width: 98%;
+  margin-top: 0.8rem;
 }
 
 /*!Armado PC*/

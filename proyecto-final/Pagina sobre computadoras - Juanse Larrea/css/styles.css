@@ -368,11 +368,11 @@ footer {
   margin: 1%;
 }
 .Componentes .Componentes__Titulo {
-  font-size: 5rem;
+  font-size: 4.3rem;
   font-weight: 800px;
 }
 .Componentes .Componentes__Explicacion--Parrafo {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .Componentes .Borde__MPGRFA {
   display: block;
@@ -382,11 +382,11 @@ footer {
   margin-bottom: 1%;
 }
 .Componentes p {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-top: 0.7rem;
 }
 .Componentes .Componentes__Subtitulos {
-  font-size: 5rem;
+  font-size: 4.3rem;
   font-weight: 800px;
 }
 .Componentes .Componentes__Imagenes {
@@ -411,11 +411,11 @@ footer {
   width: 100%;
 }
 .Componentes .Componentes__MPGRF--Identificacion {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700px;
 }
 .Componentes .Componentes__MPGRF--Identificacion--Objeto {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600px;
 }
 .Componentes .Componentes__MPGRF--Identificacion--Parrafo span {
@@ -423,10 +423,10 @@ footer {
 }
 .Componentes li {
   list-style: none;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 .Componentes th {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .Componentes ul {
   padding: 0;
@@ -696,14 +696,14 @@ footer {
   margin: 1%;
 }
 .Perifericos .Perifericos__Titulo {
-  font-size: 5rem;
+  font-size: 4.3rem;
   font-weight: 800px;
 }
 .Perifericos .Perifericos__Subitulo {
-  font-size: 5rem;
+  font-size: 4.3rem;
 }
 .Perifericos .Perifericos__Explicacion--Parrafo {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .Perifericos #Grilla__Perifericos--Objetos {
   display: grid;
@@ -731,10 +731,10 @@ footer {
   margin-bottom: 1%;
 }
 .Perifericos p {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .Perifericos .Perifericos__Subtitulos {
-  font-size: 5rem;
+  font-size: 4.3rem;
 }
 .Perifericos .Perifericos__Imagenes {
   width: 98%;
@@ -765,10 +765,10 @@ footer {
   margin: 1%;
 }
 .ArmadoPC p {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .ArmadoPC .ArmadoPC__Titulo {
-  font-size: 5rem;
+  font-size: 4.3rem;
   font-weight: 800px;
 }
 .ArmadoPC .Borde__ArmadoPC {
@@ -782,7 +782,7 @@ footer {
   color: #754185;
 }
 .ArmadoPC .ArmadoPC__Subtitulo {
-  font-size: 5rem;
+  font-size: 4.3rem;
 }
 
 /*!Contacto*/
@@ -792,7 +792,7 @@ footer {
   /**Formulario*/
 }
 .Contacto p, .Contacto legend, .Contacto label {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .Contacto .Borde__Contacto {
   padding: 2rem;
@@ -804,7 +804,7 @@ footer {
   text-decoration: none;
 }
 .Contacto .Contacto__Subtitulo {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .Contacto .Formulario fieldset {
   width: 30%;

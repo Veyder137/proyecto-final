@@ -1,14 +1,26 @@
 @media (max-width: 800px){
+    header {
+        height: 6rem;
+        align-items: center;
+        width: 100vw;
+    }
     .Footer__Img--Arriba {
         margin: 0;
     }
-    #Footer__Noindex {
+    #Footer__Contacto {
+        display: flex;
+        background-color: $header_footer-color;
+        height: 5rem;
+        width: 100vw;
+        justify-content: space-between;
+        overflow: visible;
+        position: relative;
+    }
+    #Footer__Index {
         width: 100vw;
     }
-    /*!Index*/
-    header {
-        height: 8rem;
-        align-items: center;
+    #Footer__Noindex {
+        width: 100vw;
     }
 
     nav.Menu__Navegacion{
@@ -19,41 +31,25 @@
     li{
         align-self: center;
     }
-    ul.Navegacion__Lista {
-        position:absolute;
-        top: 0px;
 
-        display: grid;
-        grid-area: 
-        "Inicio Componentes "
-        "Perifericos ArmadoPC ";
+    .Menu__Navegacion {
+        .Navegacion__Lista {
+            display: flex;
+            width: 230px;
+            height: 6rem;
+            flex-wrap: wrap;
+            justify-self: center;
+            align-self: center;
+        }
 
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
-
-        height: 8rem;
-        width: 60%;
-    }
-    a.Index {
-        grid-area: Inicio;
-    }
-    a.Componentes {
-        grid-area: Componentes;
-    }
-    a.Perifericos {
-        grid-area: Perifericos;
-    }
-    a.ArmadoPC {
-        grid-area: ArmadoPC;
-    }
-    a.Contacto {
-        width: auto;
-        position: absolute;
-        right: 1%;
-        top: 2.5rem;
-    }
-    a {
-        font-size: 1.8rem ;
+        a{
+            font-size: 1.8rem;
+        }
+        
+        width: 90vw;
+        ul {
+            padding-inline-start: 0;
+        }
     }
 
     /*!Componentes*/
@@ -65,7 +61,7 @@
         "footer footer footer";
         grid-template-rows: auto 10fr auto; 
         grid-template-columns: 1rem 100% 1rem;
-        width: 94vw;
+        width: 93vw;
         margin: 0;
     }
     header {
@@ -78,17 +74,24 @@
         grid-area: footer;
     }
 
+    .Componentes {
     .Componentes__Titulo {
         font-size: 3rem;
     }
     label.Componentes__Subtitulos {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     p.Componentes__Explicacion--Parrafo {
         font-size: 1.5rem;
     }
-    .Componentes img {
+    img {
         width: 0;
+    }
+    .Componentes__Imagenes--Motherboard {
+        width: 0%;
+    }
+    .Componentes__Imagenes {
+        width: 0%;
     }
     div.Borde__MPGRFA p {
         font-size: 1.5rem;
@@ -103,54 +106,290 @@
     p#Descripcion {
         margin-bottom: 10%;
     }
-    table#Tabla__Intel.Componentes__MPGRF--Lista--Procesador, table#Tabla__AMD--Procesador.Componentes__MPGRF--Lista--Procesador, table#Tabla__NVDIA.Componentes__MPGRF--Lista--Grafica, table#Tabla__AMD--Grafica.Componentes__MPGRF--Lista--Grafica,
-    table#Tabla__Ram.Componentes__MPGRF--Lista--Ram, 
-    table#Tabla__Fuente.Componentes__MPGRF--Lista--Fuente, table#Tabla__Almacenamiento.Componentes__MPGRF--Lista--Almacenamiento {
-        margin: 0;
-    }
-    li {
-        list-style: none;
-        font-size: 1rem;
-    }
-    th {
-        font-size: 1.2rem;
-    }
 
-    .Componentes__MPGRF--Lista--Procesador,
-    .Componentes__MPGRF--Lista--Grafica,
-    .Componentes__MPGRF--Lista--Ram,
-    .Componentes__MPGRF--Lista--Fuente,
-    .Componentes__MPGRF--Lista--Almacenamiento {
-        width:100%;
-        margin-left: 3rem;
-    }
-
-    .Componentes__MPGRF--Lista--Procesador,
-    .Componentes__MPGRF--Lista--Grafica,
-    .Componentes__MPGRF--Lista--Ram,
-    .Componentes__MPGRF--Lista--Fuente,
-    .Componentes__MPGRF--Lista--Almacenamiento th, td{
-        text-align: left;
-        vertical-align: top;
-    }
-
-    #Grilla__Motherboard, #Grilla__Procesador, #Grilla__Grafica, #Grilla__Ram, #Grilla__Fuente, #Grilla__Almacenamiento {
+    #Grilla__Motherboard, #Grilla__Procesador, #Grilla__Grafica,#Grilla__Ram, #Grilla__Fuente, #Grilla__Almacenamiento {
         display: flex;
         flex-direction: column;
     }
-    
-    #Tabla__Intel--Procesador {
-        margin: 1% 0;
-        width: auto;
-        display: flex;
-        flex-wrap: wrap;
+
+    .Tabla__Subtitulo {
+        font-size: 1.5rem;
     }
-    
-    #Tabla__AMD--Procesador {
-        margin: 1% 0;
-        width: auto;
-        display: flex;
-        flex-wrap: wrap;
+
+    #Grilla__Procesador #Tabla__Intel--Procesador {
+        display: grid;
+        grid-template-areas:
+        "Nucleos Generaciones"
+        "Nuc Gen"
+        "Rendimiento Explicacion"
+        "Ren Exp";
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 5fr 0.5fr 5fr;
+
+        height: fit-content;
+        width: 90%;
+
+        .Nucleos {
+            grid-area: Nucleos;
+        }
+        .Generaciones {
+            grid-area: Generaciones;
+        }
+        .Rendimiento {
+            grid-area: Rendimiento;
+        }
+        .Explicacion {
+            grid-area: Explicacion;
+        }
+        .Nuc{
+            grid-area: Nuc;
+        }
+        .Gen{
+            grid-area: Gen;
+        }
+        .Ren{
+            grid-area: Ren;
+        }
+        .Exo{
+            grid-area: Exp;
+        }
+
+        margin: 2%;
+        align-self: center;
+        border: 2px solid #a23931;
+        li {
+            font-size: 1rem;
+        }
+        div {
+            border: 2px solid #a23931;
+            padding: 5px;
+        }
+    }
+
+    #Grilla__Procesador #Tabla__AMD--Procesador {
+        display: grid;
+        grid-template-areas:
+        "Nucleos Generaciones Frecuencia"
+        "Nuc Gen Fre"
+        "Rendimiento Explicacion Explicacion"
+        "Ren Exp Exp";
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 5fr 0.5fr 5fr;
+
+        height: fit-content;
+        width: 90%;
+
+        .Nucleos {
+            grid-area: Nucleos;
+        }
+        .Generaciones {
+            grid-area: Generaciones;
+        }
+        .Frecuencia {
+            grid-area: Frecuencia;
+        }
+        .Rendimiento {
+            grid-area: Rendimiento;
+        }
+        .Explicacion {
+            grid-area: Explicacion;
+        }
+        .Nuc{
+            grid-area: Nuc;
+        }
+        .Gen{
+            grid-area: Gen;
+        }
+        .Fre {
+            grid-area: Fre;
+        }
+        .Ren{
+            grid-area: Ren;
+        }
+        .Exo{
+            grid-area: Exp;
+        }
+
+        margin: 2%;
+        align-self: center;
+        border: 2px solid #a23931;
+        div {
+            border: 2px solid #a23931;
+            padding: 5px;
+        }
+        li {
+            font-size: 1rem;
+        }
+        .Tabla__Subtitulo {
+            font-size: 1rem;
+        }
+    }
+
+    #Grilla__Grafica #Tabla__NVIDIA {
+        display: grid;
+        grid-template-areas:
+        "Generacion10 Generacion16"
+        "Gen10 Gen16"
+        "Generacion20 Generacion30"
+        "Gen20 Gen30";
+
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 5fr 1fr 5fr;
+
+        width: 80vw;
+        height: fit-content;
+
+        .Generacion10 { 
+            grid-area: Generacion10;
+        }
+        .Generacion16 { 
+            grid-area: Generacion16;
+        }
+        .Generacion20 { 
+            grid-area: Generacion20;
+        }
+        .Generacion30 { 
+            grid-area: Generacion30;
+        }
+        .Gen10 {
+            grid-area: Gen10;
+        }
+        .Gen16 {
+            grid-area: Gen16;
+        }
+        .Gen20 {
+            grid-area: Gen20;
+        }
+        .Gen30 {
+            grid-area: Gen30;
+        }
+        
+        align-self: center;
+        border: 2px solid #a23931;
+        li {
+            font-size: 1rem;
+        }
+        div {
+            border: 2px solid #a23931;
+            padding: 5px;
+        }
+    }
+
+    #Grilla__Grafica    #Tabla__AMD--Grafica {
+        display: grid;
+        grid-template-areas:
+        "Series400500 Series5000 Series6000"
+        "S45 S50 S60";
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 5fr;
+
+        width: 80vw;
+        height: fit-content;
+
+        .Series400500 { 
+            grid-area: Series400500;
+        }
+        .Series5000 { 
+            grid-area: Series5000;
+        }
+        .Series6000 { 
+            grid-area: Series6000;
+        }
+        .S45 {
+            grid-area: S45;
+        }
+        .S50 {
+            grid-area: S50;
+        }
+        .S60 {
+            grid-area: S60;
+        }
+        
+        align-self: center;
+        border: 2px solid #a23931;
+        li {
+            font-size: 1rem;
+        }
+        div {
+            border: 2px solid #a23931;
+            padding: 5px;
+        }
+    }
+
+    #Grilla__Ram #Tabla__Ram {
+        display: grid;
+        grid-template-areas: 
+        "DDR4 DDR5"
+        "Mhz4 Mhz5";
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 5fr;
+
+        width: fit-content;
+        height: fit-content;
+
+        .DDR4 {
+            grid-area: DDR4;
+        }
+        .DDR5 {
+            grid-area: DDR5;
+        }
+        .Mhz4 {
+            grid-area: Mhz4;
+        }
+        .Mhz5 {
+            grid-area: Mhz5;
+        }
+        
+        align-self: center;
+        border: 2px solid #a23931;
+        li {
+            font-size: 1rem;
+        }
+        div {
+            border: 2px solid #a23931;
+            padding: 5px;
+        }
+    }
+
+    #Grilla__Fuente #Tabla__Fuente {
+        display: grid;
+        grid-template-areas: 
+        "Certificacion Watts"
+        "Cer Wat";
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 5fr;
+
+        width: fit-content;
+        height: fit-content;
+
+        .Certificacion {
+            grid-area: Certificacion;
+        }
+        .Watts {
+            grid-area: Watts;
+        }
+        .Cer {
+            grid-area: Cer;
+        }
+        .Wat {
+            grid-area: Wat;
+        }
+        
+        align-self: center;
+        border: 2px solid #a23931;
+        li {
+            font-size: 1rem;
+        }
+        div {
+            border: 2px solid #a23931;
+            padding: 5px;
+        }
+    }
     }
 
     /*!Perifericos*/
@@ -169,12 +408,42 @@
     .Perifericos p {
         font-size: 1.5rem;
     }
-    .Perifericos img {
+    .Perifericos .Perifericos__Imagenes {
         width: 0;
+    }
+
+    .Perifericos #Grilla__Perifericos--Objetos {
+        display: grid;
+        grid-template-areas: 
+        "Titulo Titulo"
+        "Descripcion Descripcion";
+    
+        grid-template-columns: 25rem auto;
+        grid-template-rows: 6rem auto;
+    
+        height: auto; /*Viewport height*/ /*Viewport = Pantalla*/
+        width: 100%;
+        margin: 0;
+        
+        .Perifericos__Subtitulos{
+            grid-area: Titulo;
+        }
+        .Perifericos__Imagenes {
+            grid-area: Img;
+        }
+        #Descripcion{
+            grid-area: Descripcion;
+        }
     }
 
     /*!Armado PC*/
     .ArmadoPC h1 {
+        font-size: 3rem;
+    }
+    .ArmadoPC .ArmadoPC__Titulo{
+        font-size: 3rem;
+    }
+    .ArmadoPC .ArmadoPC__Subtitulo {
         font-size: 3rem;
     }
     .ArmadoPC p {
@@ -189,9 +458,11 @@
     .Contacto p {
         font-size: 1.5rem;
     }
-    .Formulario fieldset {
-        width: 100%;
+    .Contacto .Formulario fieldset {
+        width: 80%;
         height: 70%;
+        margin-left: 5%;
+        align-self: center;
     }
     .Contacto legend {
         font-size: 1.5rem;

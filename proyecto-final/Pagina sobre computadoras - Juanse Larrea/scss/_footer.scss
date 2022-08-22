@@ -21,6 +21,15 @@ footer {
     justify-content: space-between;
     overflow: visible;
 }
+#Footer__Contacto {
+    display: flex;
+    background-color: $header_footer-color;
+    height: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    overflow: visible;
+    position: relative;
+}
 
 .Footer__Img--Insta {
     margin-top: 0.5rem ;

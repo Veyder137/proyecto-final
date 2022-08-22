@@ -35,7 +35,7 @@
             <nav class="Menu__Navegacion">
                 <ul class="Navegacion__Lista">
                     <!--Cada link tiene una animacion y un delay-->
-                    <li class="animate__animated animate__fadeIn"><a href="../index.html">Inicio</a></li>
+                    <li  class="animate__animated animate__fadeIn"><a href="../index.html">Inicio</a></li>
                     <li  id="Animacion1" class="animate__animated animate__fadeIn"><a href="componentes.html">Componentes</a></li>
                     <li  id="Animacion2" class="animate__animated animate__fadeIn"><a href="perifericos.html">Perifericos</a></li>
                     <li  id="Animacion3" class="animate__animated animate__fadeIn"><a href="armado_pc.html">Armado PC</a></li>
@@ -110,72 +110,65 @@
                                 Es bueno saber que hay procesadores i3, i5, i7, e i9 y dentro de esta categroria pueden ser de cualquier generacion o rendimiento, para encontrar el mejor procesador para ti debes encontrar un balance. Si quieres algo de bajo presupuesto puedes buscar un i3 de 8va-11va generacion, pero si tienes un mayor presupuesto puedes ir por un i5 de 7ma-11va generacion. Si quieres algo muy potente te recomiendo un i7 o i9 de 9na-11va generacion. <br>
                             </p>
                         </div>
-                
+
                         <div id="Tabla__Intel--Procesador">
-                            <table id="Tabla__Intel" class="Componentes__MPGRF--Lista--Procesador--Intel" border="1" cellpadding="10"> <!--Tabla procesadores Intel-->
-                                <tr> <!--Titulos Procesador-->
-                                    <th>Nucleos</th>
-                                    <th>Generaciones</th>
-                                </tr>
-        
-                                <tr class="Componentes__MPGRF--Lista--Intel--Nucleos"> <!--Elementos de la tabla-->
-                                    <td>  <!--Nucleos-->
-                                        <ul>
-                                            <li>Intel i3</li>
-                                            <li>Intel i5</li>
-                                            <li>Intel i7</li>
-                                            <li>Intel i9</li>
-                                        </ul>
-                                    </td>
-        
-                                    <td> <!--Generacion-->
-                                        <ul>
-                                            <li>2da Generacion</li>
-                                            <li>3ra Generacion</li>
-                                            <li>4ta Generacion</li>
-                                            <li>5ta Generacion</li>
-                                            <li>6ta Generacion</li>
-                                            <li>7ma Generacion</li>
-                                            <li>8va Generacion</li>
-                                            <li>9na Generacion</li>
-                                            <li>10ma Generacion</li>
-                                            <li>11va Generacion</li>
-                                            <li>12va Generacion</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
-    
-                            <table id="Tabla__Intel" class="Componentes__MPGRF--Lista--Procesador--Intel" border="1" cellpadding="10"> <!--Tabla procesadores Intel-->
-                                <tr> <!--Titulos Procesador-->
-                                    <th>Rendimiento</th>
-                                    <th>Explicacion</th>
-                                </tr>
-        
-                                <tr class="Componentes__MPGRF--Lista--Intel--Nucleos"> <!--Elementos de la tabla-->
-                                    <td> <!--Rendimiento-->
-                                        <ul>
-                                            <li>
-                                                <li>Sin Identificador</li>
-                                                <li>K</li>
-                                                <li>&nbsp</li>
-                                                <li>KS</li>
-                                                <li>KF</li>
-                                                <li>T</li>
-                                            </li>
-                                        </ul>
-                                    </td>
-        
-                                    <td> <!--Explicacion Rendimiento-->
-                                        <ul>
-                                            <li>Destinados a sobremesa</li>
-                                            <li>Desbloqueado, apto para Overclocking</li>
-                                            <li>Tipo K con mayor poder</li>
-                                            <li>Tipo K sin Graficos Integrados</li>
-                                            <li>Bajo consumo</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="Nucleos">
+                                <label class="Tabla__Subtitulo">Nucleos</label>
+                            </div>
+                            <div class="Generaciones">
+                                <label class="Tabla__Subtitulo">Generaciones</label>
+                            </div>
+                            <div class="Rendimiento">
+                                <label class="Tabla__Subtitulo">Rendimiento</label>
+                            </div>
+                            <div class="Explicacion">
+                                <label class="Tabla__Subtitulo">Explicacion</label>
+                            </div>
+
+                            <div class="Nuc">
+                                <ul>
+                                    <li>Intel i3</li>
+                                    <li>Intel i5</li>
+                                    <li>Intel i7</li>
+                                    <li>Intel i9</li>
+                                </ul>
+                            </div>
+                            <div class="Gen">
+                                <ul>
+                                    <li>2da Generacion</li>
+                                    <li>3ra Generacion</li>
+                                    <li>4ta Generacion</li>
+                                    <li>5ta Generacion</li>
+                                    <li>6ta Generacion</li>
+                                    <li>7ma Generacion</li>
+                                    <li>8va Generacion</li>
+                                    <li>9na Generacion</li>
+                                    <li>10ma Generacion</li>
+                                    <li>11va Generacion</li>
+                                    <li>12va Generacion</li>
+                                </ul>
+                            </div>
+                            <div class="Ren">
+                                <ul>
+                                    <li>
+                                        <li>Sin Identificador</li>
+                                        <li>K</li>
+                                        <li>&nbsp</li>
+                                        <li>KS</li>
+                                        <li>KF</li>
+                                        <li>T</li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Exp">
+                                <ul>
+                                    <li>Destinados a sobremesa</li>
+                                    <li>Desbloqueado, apto para Overclocking</li>
+                                    <li>Tipo K con mayor poder</li>
+                                    <li>Tipo K sin Graficos Integrados</li>
+                                    <li>Bajo consumo</li>
+                                </ul>
+                            </div>
                         </div>
             
                         <div id="Identificacion__AMD"> <!--Identificacion Procesadores AMD-->
@@ -188,79 +181,73 @@
                                 Es bueno saber que hay procesadores Ryzen 3, 5, 7, y 9 y dentro de esa categoria pueden ser de cualquier generacion, rendimiento o caracteristica, para encontrar el mejor para ti debes encontrar un balance. Si quieres algo de bajo rendimiento te recomiendo un Ryzen 3 de 2da o 3ra generacion con una frecuencia de 4, 5 o 6, pero si tienes un mayor presupuesto puedes ir por un Ryzen 5 de 3ra o 4ta generacion y una frecuencia de 5, 6 o 7. Si quieres algo muy potente te recomiendo un Ryzen 7 o 9 de 5ta generacion con una frecuencia de 7, 8 o 9. <br>
                             </p>
                         </div>
-    
+                        
                         <div id="Tabla__AMD--Procesador">
-                            <table class="Componentes__MPGRF--Lista--Procesador--AMD" border="1" cellpadding="10"> <!--Tabla procesadores Ryzen-->
-                                <tr> <!--Titulos Procesador-->
-                                    <th>Nucleos</th>
-                                    <th>Generaciones</th>
-                                    <th>Frecuencia</th>
-                                </tr>
-        
-                                <tr> <!--Elementos de la tabla-->
-                                    <td>  <!--Nucleos-->
-                                        <ul>
-                                            <li>Ryzen 3</li>
-                                            <li>Ryzen 5</li>
-                                            <li>Ryzen 7</li>
-                                            <li>Ryzen 9</li>
-                                        </ul>
-                                    </td>
-        
-                                    <td> <!--Generacion-->
-                                        <ul>
-                                            <li>1a Generacion</li>
-                                            <li>2da Generacion</li>
-                                            <li>3ra Generacion</li>
-                                            <li>4ta Generacion</li>
-                                            <li>5ta Generacion</li>
-                                        </ul>
-                                    </td>
-        
-                                    <td> <!--Frecuencia-->
-                                        <ul>
-                                            <li>
-                                                <li>4</li>
-                                                <li>5</li>
-                                                <li>6</li>
-                                                <li>7</li>
-                                                <li>8</li>
-                                                <li>9</li>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
-    
-                            <table class="Componentes__MPGRF--Lista--Procesador--AMD" border="1" cellpadding="10"> <!--Tabla procesadores Ryzen-->  
-                                <tr> <!--Titulos Procesador-->
-                                    <th>Rendimiento</th>
-                                    <th>Explicacion</th>
-                                </tr>
-        
-                                <tr> <!--Elementos de la tabla-->
-                                    <td> <!--Caracteristicas especiales-->
-                                        <ul>
-                                            <li>
-                                                <li>Sin Identificador</li>
-                                                <li>X</li>
-                                                <li>G</li>
-                                                <li>T</li>
-                                                <li>S</li>
-                                            </li>
-                                        </ul>
-                                    </td>
-        
-                                    <td> <!--Explicacion Rendimiento-->
-                                        <ul>
-                                            <li>Destinados a sobremesa</li>
-                                            <li>Alto rendimiento</li>
-                                            <li>Con graficos integrados</li>
-                                            <li>Bajo consumo</li>
-                                            <li>Bajo consumo con tecnologia GFX</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="Nucleos">
+                                <label class="Tabla__Subtitulo">Nucleos</label>
+                            </div>
+                            <div class="Generaciones">
+                                <label class="Tabla__Subtitulo">Generaciones</label>
+                            </div>
+                            <div class="Frecuencia">
+                                <label class="Tabla__Subtitulo">Frecuencia</label>
+                            </div>
+                            <div class="Rendimiento">
+                                <label class="Tabla__Subtitulo">Rendimiento</label>
+                            </div>
+                            <div class="Explicacion">
+                                <label class="Tabla__Subtitulo">Explicacion</label>
+                            </div>
+
+                            <div class="Nuc">
+                                <ul>
+                                    <li>Ryzen 3</li>
+                                    <li>Ryzen 5</li>
+                                    <li>Ryzen 7</li>
+                                    <li>Ryzen 9</li>
+                                </ul>
+                            </div>
+                            <div class="Gen">
+                                <ul>
+                                    <li>1a Generacion</li>
+                                    <li>2da Generacion</li>
+                                    <li>3ra Generacion</li>
+                                    <li>4ta Generacion</li>
+                                    <li>5ta Generacion</li>
+                                </ul>
+                            </div>
+                            <div class="Fre">
+                                <ul>
+                                    <li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Ren">
+                                <ul>
+                                    <li>
+                                        <li>Sin Identificador</li>
+                                        <li>X</li>
+                                        <li>G</li>
+                                        <li>T</li>
+                                        <li>S</li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Exp">
+                                <ul>
+                                    <li>Destinados a sobremesa</li>
+                                    <li>Alto rendimiento</li>
+                                    <li>Con graficos integrados</li>
+                                    <li>Bajo consumo</li>
+                                    <li>Bajo consumo con tecnologia GFX</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,63 +278,64 @@
                                 Algo que tambien se tiene que tener en cuenta es la VRam que tiene la grafica, las de bajo presupuesto normalrmente tienen alrededor de 4gb, las de medio tienen alrededor de 6gb y las de alto tienen mas de 8gb <br>
                             </p>
                         </div>
-    
-                        <table id="Tabla__NVIDIA" class="Componentes__MPGRF--Lista--Grafica" border="1" cellpadding="10"> <!--Tabla Grafica NVIDIA-->
-                            <tr> <!--Titulos Lista-->
-                                <th>Generacion 10</th>
-                                <th>Generacion 16</th>
-                                <th>Generacion 20</th>
-                                <th>Generacion 30</th>
-                            </tr>
-    
-                            <tr> <!--Generaciones Lista-->
-                                <td> <!--Generacion 10-->
-                                    <ul>
-                                        <li>GT 1030</li>
-                                        <li>GTX 1050</li>
-                                        <li>GTX 1050Ti</li>
-                                        <li>GTX 1060</li>
-                                        <li>GTX 1070</li>
-                                        <li>GTX 1070Ti</li>
-                                        <li>GTX 1080</li>
-                                        <li>GTX 1080Ti</li>
-                                    </ul>
-                                </td>
-    
-                                <td> <!--Generacion 16-->
-                                    <ul>
-                                        <li>GTX 1650</li>
-                                        <li>GTX 1650 Super</li>
-                                        <li>GTX 1660</li>
-                                        <li>GTX 1660 Super</li>
-                                        <li>GTX 1660Ti</li>
-                                    </ul>
-                                </td>
-    
-                                <td> <!--Generacion 20-->
-                                    <ul>
-                                        <li>RTX 2060</li>
-                                        <li>RTX 2070</li>
-                                        <li>RTX 2080</li>
-                                        <li>RTX 2080Ti</li>
-                                    </ul>
-                                </td>
-    
-                                <td> <!--Generacion 30-->
-                                    <ul>
-                                        <li>RTX 3050</li>
-                                        <li>RTX 3060</li>
-                                        <li>RTX 3060Ti</li>
-                                        <li>RTX 3070</li>
-                                        <li>RTX 3070Ti</li>
-                                        <li>RTX 3080</li>
-                                        <li>RTX 3080Ti</li>
-                                        <li>RTX 3090</li>
-                                        <li>RTX 3090 Ti</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
+
+                        <div id="Tabla__NVIDIA">
+                            <div class="Generacion10">
+                                <label class="Tabla__Subtitulo">Generacion 10</label>
+                            </div>
+                            <div class="Generacion16">
+                                <label class="Tabla__Subtitulo">Generacion 16</label>
+                            </div>
+                            <div class="Generacion20">
+                                <label class="Tabla__Subtitulo">Generacion 20</label>
+                            </div>
+                            <div class="Generacion30">
+                                <label class="Tabla__Subtitulo">Generacion 30</label>
+                            </div>
+
+                            <div class="Gen10">
+                                <ul>
+                                    <li>GT 1030</li>
+                                    <li>GTX 1050</li>
+                                    <li>GTX 1050Ti</li>
+                                    <li>GTX 1060</li>
+                                    <li>GTX 1070</li>
+                                    <li>GTX 1070Ti</li>
+                                    <li>GTX 1080</li>
+                                    <li>GTX 1080Ti</li>
+                                </ul>
+                            </div>
+                            <div class="Gen16">
+                                <ul>
+                                    <li>GTX 1650</li>
+                                    <li>GTX 1650 Super</li>
+                                    <li>GTX 1660</li>
+                                    <li>GTX 1660 Super</li>
+                                    <li>GTX 1660Ti</li>
+                                </ul>
+                            </div>
+                            <div class="Gen20">
+                                <ul>
+                                    <li>RTX 2060</li>
+                                    <li>RTX 2070</li>
+                                    <li>RTX 2080</li>
+                                    <li>RTX 2080Ti</li>
+                                </ul>
+                            </div>
+                            <div class="Gen30">
+                                <ul>
+                                    <li>RTX 3050</li>
+                                    <li>RTX 3060</li>
+                                    <li>RTX 3060Ti</li>
+                                    <li>RTX 3070</li>
+                                    <li>RTX 3070Ti</li>
+                                    <li>RTX 3080</li>
+                                    <li>RTX 3080Ti</li>
+                                    <li>RTX 3090</li>
+                                    <li>RTX 3090 Ti</li>
+                                </ul>
+                            </div>
+                        </div>
             
                         <div id="Identificacion__AMD--Grafica"> <!--Identificacion Grafica AMD-->
                             <p class="Componentes__MPGRF--Identificacion--Objeto">
@@ -359,58 +347,58 @@
                                     Para elegir la mejor grafica para ti debes consultar que presupuesto tienes para armar tu pc, normalmente la grafica sale la mitad del presupuesto, si tienes un bajo presupuesto te recomiendo las Radeon Rx 560 a Rx 590, si tienes un presupuesto medio te recomiendo la Rx 5500, Rx 5600, Rx 6400 o Rx 6500, y para una gama alta te recomiendo las Rx 6600 para arriba <br>
                             </p>
                         </div>
-    
-                        <table id="Tabla__AMD--Grafica" class="Componentes__MPGRF--Lista--Grafica" border="1" cellpadding="10"> <!--Tabla Grafica AMD-->
-                            <tr> <!--Titulos Lista-->
-                                <th>Series RX 400 y 500</th>
-                                <th>Series RX 5000</th>
-                                <th>Series RX 6000</th>
-                            </tr>
-    
-                            <tr> <!--Generaciones Lista-->
-                                <td> <!--Generacion 400 Y 500-->
-                                    <ul>
-                                        <li>RX 460</li>
-                                        <li>RX 470</li>
-                                        <li>RX 480</li>
-                                        <li>RX 550</li>
-                                        <li>RX 560</li>
-                                        <li>RX 580</li>
-                                        <li>RX 590</li>
-                                    </ul>
-                                </td>
-    
-                                <td> <!--Generacion 5000-->
-                                    <ul>
-                                        <li>RX 5500</li>
-                                        <li>RX 5500XT</li>
-                                        <li>RX 5600</li>
-                                        <li>RX 5600XT</li>
-                                        <li>RX 5700</li>
-                                        <li>RX 5700XT</li>
-                                        <li>RX 5800</li>
-                                        <li>RX 5800XT</li>
-                                    </ul>
-                                </td>
-    
-                                <td> <!--Generacion 6000-->
-                                    <ul>
-                                        <li>RX 6400</li>
-                                        <li>RX 6500XT</li>
-                                        <li>RX 6600</li>
-                                        <li>RX 6600XT</li>
-                                        <li>RX 6650XT</li>
-                                        <li>RX 6700XT</li>
-                                        <li>RX 6750XT</li>
-                                        <li>RX 6800</li>
-                                        <li>RX 6800XT</li>
-                                        <li>RX 6900</li>
-                                        <li>RX 6900XT</li>
-                                        <li>RX 6950XT</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
+
+                        <div id="Tabla__AMD--Grafica">
+                            <div class="Series RX 400 y 500">
+                                <label class="Tabla__Subtitulo">Series RX 400 y 500</label>
+                            </div>
+                            <div class="Series RX 5000">
+                                <label class="Tabla__Subtitulo">Series RX 5000</label>
+                            </div>
+                            <div class="Series RX 6000">
+                                <label class="Tabla__Subtitulo">Series RX 6000</label>
+                            </div>
+
+                            <div class="S45">
+                                <ul>
+                                    <li>RX 460</li>
+                                    <li>RX 470</li>
+                                    <li>RX 480</li>
+                                    <li>RX 550</li>
+                                    <li>RX 560</li>
+                                    <li>RX 580</li>
+                                    <li>RX 590</li>
+                                </ul>
+                            </div>
+                            <div class="S50">
+                                <ul>
+                                    <li>RX 5500</li>
+                                    <li>RX 5500XT</li>
+                                    <li>RX 5600</li>
+                                    <li>RX 5600XT</li>
+                                    <li>RX 5700</li>
+                                    <li>RX 5700XT</li>
+                                    <li>RX 5800</li>
+                                    <li>RX 5800XT</li>
+                                </ul>
+                            </div>
+                            <div class="S60">
+                                <ul>
+                                    <li>RX 6400</li>
+                                    <li>RX 6500XT</li>
+                                    <li>RX 6600</li>
+                                    <li>RX 6600XT</li>
+                                    <li>RX 6650XT</li>
+                                    <li>RX 6700XT</li>
+                                    <li>RX 6750XT</li>
+                                    <li>RX 6800</li>
+                                    <li>RX 6800XT</li>
+                                    <li>RX 6900</li>
+                                    <li>RX 6900XT</li>
+                                    <li>RX 6950XT</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
         
@@ -430,44 +418,43 @@
     
                             <p class="Componentes__MPGRF--Identificacion--Parrafo">
                                 Algo que debes saber es que al elegir una ram es que debemos tener en cuenta si los MHz son compatibles con la motherboard, para ello debemos ver cuantos MHz soporta la motherboard y buscar algo igual o menos. Aunque no es problema si nos pasamos del limite, lo que pasara en ese caso es que la Ram trabajara a una velocidad menor para equipararse con la motherboard, asi que estariamos malgastando dinero. <br>
-                                Las memorias Ram tienen una gran variedad de marcas, algunas de ellas son HyperX, Kingston, G.Skill, etc. Aunque haya una gran variedad no tiene que ser un problema encontrar una que sea funcional para tu pc. Hay que saber que la Ram viene ligada a la Placa Madre, la placa madre soporta cierto modulo, estos modulos son DDR4 y DDR5, y dentro de cada modulo hay diferentes MHz. Una vez visto esto ya deberiamos saber hasta que MHz podemos comprar, ahora debemos decidir cuantos GigaBytes de memoria queremos, normalmente se compran Ram de 4gb, 8gb o 16gb. Aunque si ya tenemos por ejemplo una Ram de 8Gb 3200MHz podemos comprar otra Ram de 8Gb para tener un total de 16, pero si o si debe de ser de la misma cantidad de MHz y de la misma marca, esto es para evitar problemas. <br>
-                                He aqui una lista de los diferentes MegaHeartz.
+                                Las memorias Ram tienen una gran variedad de marcas, algunas de ellas son HyperX, Kingston, G.Skill, etc. Aunque haya una gran variedad no tiene que ser un problema encontrar una que sea funcional para tu pc. Hay que saber que la Ram viene ligada a la Placa Madre, la placa madre soporta cierto modulo, estos modulos son DDR4 y DDR5, y dentro de cada modulo hay diferentes MHz. Una vez visto esto ya deberiamos saber hasta que MHz podemos comprar, ahora debemos decidir cuantos GigaBytes de memoria queremos, normalmente se compran Ram de 4gb, 8gb o 16gb. Aunque si ya tenemos por ejemplo una Ram de 8Gb 3200MHz podemos comprar otra Ram de 8Gb para tener un total de 16, pero si o si debe de ser de la misma cantidad de MHz y de la misma marca, esto es para evitar problemas.
                             </p>
                         </div>
-    
-                        <table id="Tabla__Ram" class="Componentes__MPGRF--Lista--Ram" border="1" cellpadding="10"> <!--Tabla Mhz Ram-->
-                            <tr> <!--DDR4 y DDR5-->
-                                <th>DDR4</th>
-                                <th>DDR5</th>
-                            </tr>
-        
-                            <tr> <!--MHZ-->
-                                <td> <!--DDR4 MHz-->
-                                    <ul>
-                                        <li>2400MHz</li>
-                                        <li>2666MHz</li>
-                                        <li>2933Mhz</li>
-                                        <li>3000Mhz</li>
-                                        <li>3200MHz</li>
-                                        <li>3600Mhz</li>
-                                        <li>3733Mhz</li>
-                                        <li>4000Mhz</li>
-                                        <li>4266Mhz</li>
-                                        <li>4400Mhz</li>
-                                    </ul>
-                                </td>
-        
-                                <td> <!--DDR5 MHz-->
-                                    <ul>
-                                        <li>4800MHz</li>
-                                        <li>5200MHz</li>
-                                        <li>5600Mhz</li>
-                                        <li>6000Mhz</li>
-                                        <li>6200MHz</li>
-                                        <li>6400Mhz</li>
-                                </td>
-                            </tr>
-                        </table>
+
+                        <div id="Tabla__Ram">
+                            <div class="DDR4">
+                                <label class="Tabla__Subtitulo">DDR4</label>
+                            </div>
+                            <div class="DDR5">
+                                <label class="Tabla__Subtitulo">DDR5</label>
+                            </div>
+
+                            <div class="Mhz4">
+                                <ul>
+                                    <li>2400MHz</li>
+                                    <li>2666MHz</li>
+                                    <li>2933Mhz</li>
+                                    <li>3000Mhz</li>
+                                    <li>3200MHz</li>
+                                    <li>3600Mhz</li>
+                                    <li>3733Mhz</li>
+                                    <li>4000Mhz</li>
+                                    <li>4266Mhz</li>
+                                    <li>4400Mhz</li>
+                                </ul>
+                            </div>
+                            <div class="Mhz5">
+                                <ul>
+                                    <li>4800MHz</li>
+                                    <li>5200MHz</li>
+                                    <li>5600Mhz</li>
+                                    <li>6000Mhz</li>
+                                    <li>6200MHz</li>
+                                    <li>6400Mhz</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
         
@@ -491,36 +478,35 @@
                             <p class="Componentes__MPGRF--Identificacion--Parrafo">
                                 En lo primero que debes fijarte para elegir correctamente una fuente de alimentacion es en el tamaño que soporta tu gabinete, generalmente solo hay dos tipos, estos son ATX y SFX, siento ATX mas grande, pero recientemente se ha visto un modelo intermedio entre estos dos, llamado SFX-L. <br>
                                 Lo siguiente deberia ser la cantidad de potencia que tiene la fuente, y para esto la mejor opcion seria calcular de una forma aproximada cuantos watts va a consumir tu pc, porque si consumes mas de lo que tienes la PC podria fallar e incluso daniarse. Pero no se preocupen porque hay calculadoras de potencias que al ingresar tus componentes te dice cuando gastarias, aqui les dejo la <a href="https://www.geeknetic.es/calculadora-fuente-alimentacion/" target="_blank">Primera Pagina</a> que esta en espaniol y aqui la <a href="https://outervision.com/power-supply-calculator" target="_blank">Segunda Pagina</a> que esta en ingles. <br>
-                                Y por ultimo pero no menos importante la certificacion, esto podria llamarse la calidad de la fuente, ya que una fuente de mala calidad podria estar consumiendo mas watts que una de buena calidad en las mismas condiciones, que es lo que no queremos. Por esto es recomendable optar por las fuentes de alimentación que cuentan con alguna de las diferentes certificaciones 80+, ya que estas fuentes garantizan que, al menos el 80% de la electricidad que consumen, finalmente se convierte en corriente continua que utiliza tu ordenador. El resto se convierte en calor. <br>
-                                He aqui una lista para identificar mejor las fuentes
+                                Y por ultimo pero no menos importante la certificacion, esto podria llamarse la calidad de la fuente, ya que una fuente de mala calidad podria estar consumiendo mas watts que una de buena calidad en las mismas condiciones, que es lo que no queremos. Por esto es recomendable optar por las fuentes de alimentación que cuentan con alguna de las diferentes certificaciones 80+, ya que estas fuentes garantizan que, al menos el 80% de la electricidad que consumen, finalmente se convierte en corriente continua que utiliza tu ordenador. El resto se convierte en calor.
                             </p>
                         </div>
-    
-                        <table id="Tabla__Fuente" class="Componentes__MPGRF--Lista--Fuente" border="1" cellpadding="10"> <!--Tabla Fuente-->
-                            <tr> <!--Watts y Certificacion-->
-                                <th>Certificacion</th>
-                                <th>Watts</th>
-                            </tr>
-        
-                            <tr>
 
-                                <td> <!--Certificacion-->
-                                    <ul>
-                                        <li>80 PLUS</li>
-                                        <li>80 PLUS Bronze</li>
-                                        <li>80 PLUS Silver</li>
-                                        <li>80 PLUS Gold</li>
-                                        <li>80 PLUS Platinium</li>
-                                        <li>80 PLUS Titanium</li>
-                            </td>
+                        <div id="Tabla__Fuente">
+                            <div class="Certificacion">
+                                <label class="Tabla__Subtitulo">Certificacion</label>
+                            </div>
+                            <div class="Watts">
+                                <label class="Tabla__Subtitulo">Watts</label>
+                            </div>
 
-                            <td> <!--Watts-->
-                                    <ul>
-                                        <li>Hay muchos tipos de fuentes</li>
-                                        <li>Desde 180w Hasta los 1600w o mas</li>
-                            </td>
-                            </tr>
-                        </table>
+                            <div class="Cer">
+                                <ul>
+                                    <li>80 PLUS</li>
+                                    <li>80 PLUS Bronze</li>
+                                    <li>80 PLUS Silver</li>
+                                    <li>80 PLUS Gold</li>
+                                    <li>80 PLUS Platinium</li>
+                                    <li>80 PLUS Titanium</li>
+                                </ul>
+                            </div>
+                            <div class="Wat">
+                                <ul>
+                                    <li>Hay muchos tipos de fuentes</li>
+                                    <li>Desde 180w Hasta los 1600w o mas</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
         
